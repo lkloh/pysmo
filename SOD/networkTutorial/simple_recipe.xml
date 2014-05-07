@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<sod>
+	<networkArm>
+		<!-- Tells network arm to talk to IRIS DMC's FDSM Station web service to retrieve its data -->
+		<fdsnStation/> 
+
+		<!-- Add a network subsetter to the initial recipe. Only allow networks with code II to pass through. Limites #channels retrieved byt his run -->
+		<networkCode>II</networkCode>
+
+		<!-- Adds a channel subsetter. Restricts the channels to be only those with a band code of B (broadband channels). -->
+		<bandCode>B</bandCode>
+
+
+		<printlineChannelProcess/>
+	</networkArm>
+</sod>
