@@ -83,7 +83,9 @@ Installing the last two packages is optional. \verb"ipython" is an enhanced inte
   port select --set python python27
 \end{verbatim}
 
-% -------------------------------------------------------------------------------------- %
+You need this version, not other versions on your computer, since this is the one that has the libraries AIMBAT needs.
+
+% -------------------------------------------------------------------------- %
 
 \section{Installing AIMBAT}
 
@@ -100,6 +102,8 @@ The packages should be installed into the Python site-packages directory. To fin
   site.getsitepackages()
 \end{verbatim}
 
+Whatever is output there, lets call it \verb"<pkg-install-dir>"
+
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.5\textwidth]{images/site_package_location}
@@ -112,6 +116,23 @@ Now that we know the location of the site-packages direction, cd into it. Call t
 Put the two Python packages inside the directory.
 
 \subsection{Installing pysmo.sac}
+
+Python module \verb"Distutils" is used to write a setup.py script to build, distribute, and install \verb"pysmo.sac". In the directory \verb"<pkg-install-dir>/pysmo-sac-0.5>", type 
+
+\begin{verbatim}
+  python setup.py build
+  python setup.py install
+\end{verbatim}
+
+to install it and its package information file \verb"<pysmo.sac-0.5-py2.7.egg-info" to the global site-packages directory \verb"<prefix>/lib/python2.7/site-packages", which is the same as Numpy, Scipy, and Matplotlib.
+
+If you don't have write permission to the global site-packages directory, use the \verb"'--user'" option to install to \verb"<userbase>/lib/python2.7/site-packages":
+
+\begin{verbatim}
+  python setup.py install --user
+\end{verbatim}
+
+This will install it to your home directory only, not for all users on the computer. 
 
 
 
