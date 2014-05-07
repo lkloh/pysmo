@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.11)  6 MAY 2014 19:36
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.11)  7 MAY 2014 13:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -306,26 +306,58 @@ File: images/python_version.png Graphic file (type png)
 <use images/python_version.png>
 Package pdftex.def Info: images/python_version.png used on input line 54.
 (pdftex.def)             Requested size: 172.5pt x 176.38829pt.
- [2 <./images/python_console.png> <./images/python_version.png>] (./installing.
-aux) ) 
+ [2 <./images/python_console.png> <./images/python_version.png>]
+Overfull \hbox (0.11014pt too wide) in paragraph at lines 94--97
+\OT1/cmr/m/n/10 pysmo.aimbat are avail-able for down-load at $\OT1/cmtt/m/n/10 
+http : / / www . earth . northwestern .
+ []
+
+<images/site_package_location.png, id=18, 671.50874pt x 474.77374pt>
+File: images/site_package_location.png Graphic file (type png)
+
+<use images/site_package_location.png>
+Package pdftex.def Info: images/site_package_location.png used on input line 10
+9.
+(pdftex.def)             Requested size: 172.5pt x 121.96039pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3]
+Overfull \hbox (6.5546pt too wide) in paragraph at lines 127--128
+[]\OT1/cmr/m/n/10 to in-stall it and its pack-age in-for-ma-tion file []\OT1/cm
+tt/m/n/10 <pysmo.sac-0.5-py2.7.egg-info
+ []
+
+
+Overfull \hbox (2.22084pt too wide) in paragraph at lines 127--128
+\OT1/cmr/m/n/10 to the global site-packages di-rec-tory []\OT1/cmtt/m/n/10 <pre
+fix>/lib/python2.7/site-packages\OT1/cmr/m/n/10 ,
+ []
+
+[4 <./images/site_package_location.png>] (./installing.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3136 strings out of 494578
- 41115 string characters out of 3168574
- 101496 words of memory out of 3000000
- 6299 multiletter control sequences out of 15000+200000
+ 3142 strings out of 494578
+ 41314 string characters out of 3168574
+ 103496 words of memory out of 3000000
+ 6304 multiletter control sequences out of 15000+200000
  11363 words of font info for 45 fonts, out of 3000000 for 9000
  314 hyphenation exceptions out of 8191
- 45i,7n,37p,263b,236s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mbx12.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr10.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr12.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr17.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmtt10.pfb>
-Output written on installing.pdf (2 pages, 586386 bytes).
+ 45i,7n,37p,289b,236s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
+2.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr12.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr17.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmtt10.pfb>
+Output written on installing.pdf (4 pages, 638474 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 21 compressed objects within 1 object stream
+ 42 PDF objects out of 1000 (max. 8388607)
+ 25 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

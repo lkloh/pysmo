@@ -11,7 +11,11 @@
 \begin{document}
 \maketitle
 
-% -------------------------------------------------------------------------------------- %
+% ************************************************************* %
+%                                                               %
+%                       OPERATING SYSTEM                        %
+%                                                               %
+% ************************************************************* %
 
 \section{Getting your Operating System}
 
@@ -31,9 +35,21 @@ Go to \verb"System Preferences" as in~\ref{fig:system_preferences}, and click on
   \label{fig:startup_disk}
 \end{figure}
 
-% -------------------------------------------------------------------------------------- %
+% ************************************************************* %
+%                                                               %
+%                       OPERATING SYSTEM                        %
+%                                                               %
+% ************************************************************* %
+
+% ************************************************************* %
+%                                                               %
+%                       INSTALLING PYTHON                       %
+%                                                               %
+% ************************************************************* %
 
 \section{Installing Python}
+
+% ------------------------------------------------------------- %
 
 \subsection{Getting Python}
 
@@ -56,11 +72,15 @@ To get python, go to \url{https://www.python.org/}, and get the correct version 
   \label{fig:python_version}
 \end{figure}
 
+% ------------------------------------------------------------- %
+
 \subsection{Macports}
 
 Its best to use Macports \url{http://guide.macports.org/} to install the necessary python libraries for AIMBAT. 
 
 If you just upgraded your operating system, you need to upgrade Macports and re-install the libraries as well. Follow the instructions here: \url{https://trac.macports.org/wiki/Migration}.
+
+% ------------------------------------------------------------- %
 
 \subsection{Installing the necessary components}
 
@@ -85,9 +105,22 @@ Installing the last two packages is optional. \verb"ipython" is an enhanced inte
 
 You need this version, not other versions on your computer, since this is the one that has the libraries AIMBAT needs.
 
-% -------------------------------------------------------------------------- %
+% ************************************************************* %
+%                                                               %
+%                       INSTALLING PYTHON                       %
+%                                                               %
+% ************************************************************* %
+
+% ************************************************************* %
+%                                                               %
+%                       INSTALLING AIMBAT                       %
+%                                                               %
+% ************************************************************* %
+
 
 \section{Installing AIMBAT}
+
+% ------------------------------------------------------------- %
 
 \subsection{Getting the packages}
 
@@ -115,6 +148,8 @@ Now that we know the location of the site-packages direction, cd into it. Call t
 
 Put the two Python packages inside the directory.
 
+% -------------------------------------------------------------------------- %
+
 \subsection{Installing pysmo.sac}
 
 Python module \verb"Distutils" is used to write a setup.py script to build, distribute, and install \verb"pysmo.sac". In the directory \verb"<pkg-install-dir>/pysmo-sac-0.5>", type 
@@ -134,6 +169,20 @@ If you don't have write permission to the global site-packages directory, use th
 
 This will install it to your home directory only, not for all users on the computer. 
 
+If you successfully installed the \verb"sac" module, in the python console, this should happen after you type \verb"from pysmo import sac": 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/sac_installed}
+  \caption{Console}
+  \label{fig:sac_installed}
+\end{figure}
+
+% ************************************************************* %
+%                                                               %
+%                       INSTALLING AIMBAT                       %
+%                                                               %
+% ************************************************************* %
 
 
 
@@ -151,9 +200,12 @@ This will install it to your home directory only, not for all users on the compu
 
 
 
-% -------------------------------------------------------------------------------------- %
+
+
+
+% ------------------------------------------------------------------------- %
 
 
 \end{document}
 
-% ---------------------------------------- END ---------------------------------------- %
+% --------------------------------- END --------------------------------- %
