@@ -1,0 +1,90 @@
+2014-05-07 14:42:22,738 INFO main sod.Start - logging configured
+2014-05-07 14:42:22,739 INFO main sod.Start - SOD version 3.2.3
+2014-05-07 14:42:22,740 INFO main sod.Start - Args:  --demo
+2014-05-07 14:42:22,740 INFO main sod.Start - Recipe: jar:edu/sc/seis/sod/data/configFiles/demo.xml
+2014-05-07 14:42:22,740 INFO main sod.Start - validating recipe...
+2014-05-07 14:42:23,249 INFO main sod.Start - Congratulations, valid recipe.
+2014-05-07 14:42:23,287 INFO main sod.Start - Database: jdbc:hsqldb:file:SodDb/SodDb
+2014-05-07 14:42:23,357 INFO main hibernate.AbstractHibernateDB - zombie session checker started
+2014-05-07 14:42:24,915 INFO main sod.LocalSeismogramArm - EventStation: edu.sc.seis.sod.subsetter.eventStation.DistanceRange
+2014-05-07 14:42:24,916 INFO main sod.LocalSeismogramArm - EventChannel: edu.sc.seis.sod.subsetter.eventChannel.PassEventChannel
+2014-05-07 14:42:24,916 INFO main sod.LocalSeismogramArm - RequestGenerator: edu.sc.seis.sod.subsetter.requestGenerator.PhaseRequest
+2014-05-07 14:42:24,916 INFO main sod.LocalSeismogramArm - RequestSubsetter: edu.sc.seis.sod.subsetter.request.PassRequest
+2014-05-07 14:42:24,916 INFO main sod.LocalSeismogramArm - SeismogramSourceLocator: edu.sc.seis.sod.source.seismogram.FdsnDataSelect
+2014-05-07 14:42:24,916 INFO main sod.LocalSeismogramArm - AvailableDataSubsetter: edu.sc.seis.sod.subsetter.availableData.SomeCoverage
+2014-05-07 14:42:24,916 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.PrintlineSeismogramProcess
+2014-05-07 14:42:24,916 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.SacWriter
+2014-05-07 14:42:24,916 INFO main sod.Start - Start start()
+2014-05-07 14:42:25,120 INFO main hibernate.HibernateUtil - using hsql dialect
+2014-05-07 14:42:25,122 INFO main hibernate.HibernateUtil - setup: org.hibernate.dialect.HSQLDialect org.hsqldb.jdbcDriver  jdbc:hsqldb:file:SodDb/SodDb  sa  
+2014-05-07 14:42:26,348 INFO main hibernate.AbstractHibernateDB - Commit session before creation, nothing to do
+2014-05-07 14:42:26,348 INFO main sod.CommonAccess - CommonAccess.initialize
+2014-05-07 14:42:26,431 INFO main jacorb.config - configuration jacorb loaded from file /Users/lkloh/sod-3.2.3/etc/jacorb.properties
+2014-05-07 14:42:26,446 INFO main orb.print_version - 
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JacORB V 2.3.1_USC2, www.jacorb.org
+	(C) The JacORB project 27-May-2009
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2014-05-07 14:42:26,470 INFO main fissuresUtil.Dissendium - Loading darkMagic passwords from system properties
+2014-05-07 14:42:26,470 INFO main fissuresUtil.Dissendium - Loading IRIS passwords from system properties
+2014-05-07 14:42:26,472 INFO main fissuresUtil.Dissendium - Dissendium NOT registered with orb as no passwords specified.
+2014-05-07 14:42:26,515 INFO main jacorb.orb - Property "jacorb.hashtable_class" is set to: java.util.HashMap
+2014-05-07 14:42:26,515 INFO main sod.CommonAccess - ORB class is org.jacorb.orb.ORB
+2014-05-07 14:42:28,749 INFO WaveformArm 0 sod.WaveformArm - Starting WaveformArm
+2014-05-07 14:42:28,750 INFO EventArm sod.EventArm - edu.sc.seis.sod.source.event.FdsnEvent@693f87b1 covers events from 2003-01-01T00:00:00.000GMT to 2003-01-10T23:59:59.999GMT
+2014-05-07 14:42:29,001 INFO main sod.Start - Finished starting all threads.
+2014-05-07 14:42:29,025 INFO retry loader hibernate.SodDB - retry query: from edu.sc.seis.sod.EventChannelPair  where (status.standingInt = 3 or status.standingInt = 4 )  and seconds_between(:now, lastQuery) > :minDelay  and numRetries < 5 and (seconds_between(:now, lastQuery) > :maxDelay or seconds_between(:now, lastQuery) > power(:base, numRetries))  order by numRetries
+2014-05-07 14:42:29,030 INFO Refresh NetworkArm sod.RefreshNetworkArm - Refreshing Network Arm
+2014-05-07 14:42:29,031 INFO Refresh NetworkArm sod.NetworkArm - Getting networks from server
+2014-05-07 14:42:29,078 INFO WaveformArm 0 hibernate.SodDB - populate ECP/EVP ToDo: 0
+2014-05-07 14:42:29,359 INFO EventArm sod.EventArm - Handling 0 events from http://service.iris.edu:80/fdsnws/event/1/query?catalog=NEIC%20PDE&includeallmagnitudes=true&minmagnitude=6.0&orderby=time-asc
+2014-05-07 14:42:29,366 INFO Refresh NetworkArm sod.NetworkArm - Found 1 networks
+2014-05-07 14:42:29,389 INFO Refresh NetworkArm sod.NetworkArm - store network: II 1 1
+2014-05-07 14:42:29,389 INFO Refresh NetworkArm sod.NetworkArm - 1 networks passed
+2014-05-07 14:42:29,533 INFO EventArm sod.EventArm - Handling 0 events from http://service.iris.edu:80/fdsnws/event/1/query?catalog=NEIC%20PDE&includeallmagnitudes=true&minmagnitude=6.0&orderby=time-asc
+2014-05-07 14:42:29,539 INFO EventArm sod.EventArm - Finished processing the event arm.
+2014-05-07 14:42:29,539 INFO EventArm sod.EventArm - Event arm finished
+2014-05-07 14:42:29,771 INFO Refresh NetworkArm sod.NetworkArm - Store AAK as 1 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:29,780 INFO Refresh NetworkArm sod.NetworkArm - Store ABKT as 2 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:29,789 INFO Refresh NetworkArm sod.NetworkArm - Store ALE as 3 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:29,798 INFO Refresh NetworkArm sod.NetworkArm - Store ARU as 4 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:29,809 INFO Refresh NetworkArm sod.NetworkArm - Store ASCN as 5 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:29,821 INFO Refresh NetworkArm sod.NetworkArm - Store BFO as 6 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:29,829 INFO Refresh NetworkArm sod.NetworkArm - Store BORG as 7 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:29,837 INFO Refresh NetworkArm sod.NetworkArm - Store BRVK as 8 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:29,844 INFO Refresh NetworkArm sod.NetworkArm - Store CMLA as 9 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:29,853 INFO Refresh NetworkArm sod.NetworkArm - Store COCO as 10 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:29,864 INFO Refresh NetworkArm sod.NetworkArm - Store EFI as 11 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:29,874 INFO Refresh NetworkArm sod.NetworkArm - Store ERM as 12 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:29,882 INFO Refresh NetworkArm sod.NetworkArm - Store ESK as 13 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:29,891 INFO Refresh NetworkArm sod.NetworkArm - Store FFC as 14 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:29,901 INFO Refresh NetworkArm sod.NetworkArm - Store HOPE as 15 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:29,912 INFO Refresh NetworkArm sod.NetworkArm - Store JTS as 16 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:29,921 INFO Refresh NetworkArm sod.NetworkArm - Store KAPI as 17 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:29,929 INFO Refresh NetworkArm sod.NetworkArm - Store KDAK as 18 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:29,940 INFO Refresh NetworkArm sod.NetworkArm - Store KIV as 19 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:29,950 INFO Refresh NetworkArm sod.NetworkArm - Store KURK as 20 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:29,958 INFO Refresh NetworkArm sod.NetworkArm - Store KWAJ as 21 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:29,969 INFO Refresh NetworkArm sod.NetworkArm - Store LVZ as 22 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:29,990 INFO Refresh NetworkArm sod.NetworkArm - Store MBAR as 23 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:29,996 INFO Refresh NetworkArm sod.NetworkArm - Store MSEY as 24 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:30,004 INFO Refresh NetworkArm sod.NetworkArm - Store MSVF as 25 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:30,011 INFO Refresh NetworkArm sod.NetworkArm - Store NIL as 26 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:30,019 INFO Refresh NetworkArm sod.NetworkArm - Store NNA as 27 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:30,026 INFO Refresh NetworkArm sod.NetworkArm - Store NRIL as 28 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:30,032 INFO Refresh NetworkArm sod.NetworkArm - Store OBN as 29 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:30,039 INFO Refresh NetworkArm sod.NetworkArm - Store PALK as 30 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:30,044 INFO Refresh NetworkArm sod.NetworkArm - Store PFO as 31 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:30,051 INFO Refresh NetworkArm sod.NetworkArm - Store RAYN as 32 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:30,056 INFO Refresh NetworkArm sod.NetworkArm - Store RPN as 33 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:30,063 INFO Refresh NetworkArm sod.NetworkArm - Store SACV as 34 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:30,070 INFO Refresh NetworkArm sod.NetworkArm - Store SHEL as 35 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:30,077 INFO Refresh NetworkArm sod.NetworkArm - Store SUR as 36 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:30,082 INFO Refresh NetworkArm sod.NetworkArm - Store TAU as 37 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:30,087 INFO Refresh NetworkArm sod.NetworkArm - Store TLY as 38 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:30,093 INFO Refresh NetworkArm sod.NetworkArm - Store WRAB as 39 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@e75a11
+2014-05-07 14:42:30,097 INFO Refresh NetworkArm sod.RefreshNetworkArm - found 39 stations in II.19860101T00:00:00.000Z
+2014-05-07 14:42:35,209 INFO Refresh NetworkArm hibernate.AbstractHibernateDB - Commit session before creation, nothing to do
+2014-05-07 14:42:36,222 INFO Refresh NetworkArm sod.NetworkArm - Network arm finished.
+2014-05-07 14:42:36,222 INFO OutputScheduler status.OutputScheduler - Lo!  I am weary of my wisdom, like the bee that hath gathered too much
+honey; I need hands outstretched to take it.

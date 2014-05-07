@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.11)  7 MAY 2014 13:07
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.11)  7 MAY 2014 15:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**installing.tex
-(./installing.tex
+**sod.tex
+(./sod.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ba
 sque, danish, dutch, ukenglish, usenglishmax, finnish, french, german, ngerman,
@@ -189,8 +189,8 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 \Gin@req@height=\dimen122
 \Gin@req@width=\dimen123
 )
-(./installing.aux)
-\openout1 = `installing.aux'.
+(./sod.aux)
+\openout1 = `sod.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
@@ -274,90 +274,64 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 12.
 (/usr/local/texlive/2012basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-<images/system_preferences.png, id=1, 801.99625pt x 743.77875pt>
-File: images/system_preferences.png Graphic file (type png)
+<images/sod_location.png, id=1, 688.5725pt x 339.2675pt>
+File: images/sod_location.png Graphic file (type png)
 
-<use images/system_preferences.png>
-Package pdftex.def Info: images/system_preferences.png used on input line 22.
-(pdftex.def)             Requested size: 172.5pt x 159.9774pt.
+<use images/sod_location.png>
+Package pdftex.def Info: images/sod_location.png used on input line 26.
+(pdftex.def)             Requested size: 172.5pt x 84.99268pt.
 
-<images/startup_disk.png, id=2, 728.7225pt x 468.75125pt>
-File: images/startup_disk.png Graphic file (type png)
+<images/path_to_sod_bin.png, id=2, 699.61375pt x 353.32pt>
+File: images/path_to_sod_bin.png Graphic file (type png)
 
-<use images/startup_disk.png>
-Package pdftex.def Info: images/startup_disk.png used on input line 29.
-(pdftex.def)             Requested size: 172.5pt x 110.95764pt.
- [1
+<use images/path_to_sod_bin.png>
+Package pdftex.def Info: images/path_to_sod_bin.png used on input line 36.
+(pdftex.def)             Requested size: 172.5pt x 87.11136pt.
 
+<images/home_bash_profile.png, id=3, 691.58376pt x 482.80376pt>
+File: images/home_bash_profile.png Graphic file (type png)
 
-
-{/usr/local/texlive/2012basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./
-images/system_preferences.png> <./images/startup_disk.png>] <images/python_cons
-ole.png, id=13, 642.4pt x 465.74pt>
-File: images/python_console.png Graphic file (type png)
-
-<use images/python_console.png>
-Package pdftex.def Info: images/python_console.png used on input line 45.
-(pdftex.def)             Requested size: 172.5pt x 125.06213pt.
-
-<images/python_version.png, id=14, 711.65875pt x 727.71875pt>
-File: images/python_version.png Graphic file (type png)
-
-<use images/python_version.png>
-Package pdftex.def Info: images/python_version.png used on input line 54.
-(pdftex.def)             Requested size: 172.5pt x 176.38829pt.
- [2 <./images/python_console.png> <./images/python_version.png>]
-Overfull \hbox (0.11014pt too wide) in paragraph at lines 94--97
-\OT1/cmr/m/n/10 pysmo.aimbat are avail-able for down-load at $\OT1/cmtt/m/n/10 
-http : / / www . earth . northwestern .
- []
-
-<images/site_package_location.png, id=18, 671.50874pt x 474.77374pt>
-File: images/site_package_location.png Graphic file (type png)
-
-<use images/site_package_location.png>
-Package pdftex.def Info: images/site_package_location.png used on input line 10
-9.
-(pdftex.def)             Requested size: 172.5pt x 121.96039pt.
+<use images/home_bash_profile.png>
+Package pdftex.def Info: images/home_bash_profile.png used on input line 45.
+(pdftex.def)             Requested size: 172.5pt x 120.4207pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[3]
-Overfull \hbox (6.5546pt too wide) in paragraph at lines 127--128
-[]\OT1/cmr/m/n/10 to in-stall it and its pack-age in-for-ma-tion file []\OT1/cm
-tt/m/n/10 <pysmo.sac-0.5-py2.7.egg-info
- []
+<images/sod_installed_query.png, id=4, 687.56876pt x 491.8375pt>
+File: images/sod_installed_query.png Graphic file (type png)
+
+<use images/sod_installed_query.png>
+Package pdftex.def Info: images/sod_installed_query.png used on input line 54.
+(pdftex.def)             Requested size: 172.5pt x 123.39435pt.
 
 
-Overfull \hbox (2.22084pt too wide) in paragraph at lines 127--128
-\OT1/cmr/m/n/10 to the global site-packages di-rec-tory []\OT1/cmtt/m/n/10 <pre
-fix>/lib/python2.7/site-packages\OT1/cmr/m/n/10 ,
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4 <./images/site_package_location.png>] (./installing.aux)
+[1
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
- ) 
+
+{/usr/local/texlive/2012basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./
+images/sod_location.png> <./images/path_to_sod_bin.png>] [2 <./images/home_bash
+_profile.png> <./images/sod_installed_query.png>] (./sod.aux) ) 
 Here is how much of TeX's memory you used:
- 3142 strings out of 494578
- 41314 string characters out of 3168574
- 103496 words of memory out of 3000000
- 6304 multiletter control sequences out of 15000+200000
- 11363 words of font info for 45 fonts, out of 3000000 for 9000
+ 3131 strings out of 494578
+ 41022 string characters out of 3168574
+ 102496 words of memory out of 3000000
+ 6295 multiletter control sequences out of 15000+200000
+ 10451 words of font info for 42 fonts, out of 3000000 for 9000
  314 hyphenation exceptions out of 8191
- 45i,7n,37p,289b,236s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
-2.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr10.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr12.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr17.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmtt10.pfb>
-Output written on installing.pdf (4 pages, 638474 bytes).
+ 45i,7n,37p,256b,234s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texl
+ive/2012basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
+exlive/2012basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
+l/texlive/2012basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/l
+ocal/texlive/2012basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on sod.pdf (2 pages, 216132 bytes).
 PDF statistics:
- 42 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
+ 31 PDF objects out of 1000 (max. 8388607)
+ 18 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
