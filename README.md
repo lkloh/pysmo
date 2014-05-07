@@ -1,5 +1,9 @@
 package AIMBAT 
 ==============
+
+Disclaimer
+----------
+Work based of what someone else did here: https://github.com/pysmo. 
  
 Copyright
 ---------
