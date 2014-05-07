@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.11)  6 MAY 2014 19:01
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.11)  6 MAY 2014 19:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -163,6 +163,10 @@ Package: amscd 1999/11/29 v1.2d
 \minaw@=\dimen119
 \bigaw@=\dimen120
 \minCDarrowwidth=\dimen121
+)
+(/usr/local/texlive/2012basic/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 ))
 (/usr/local/texlive/2012basic/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
@@ -269,28 +273,59 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 12.
 
 (/usr/local/texlive/2012basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-) [1
+)
+<images/system_preferences.png, id=1, 801.99625pt x 743.77875pt>
+File: images/system_preferences.png Graphic file (type png)
+
+<use images/system_preferences.png>
+Package pdftex.def Info: images/system_preferences.png used on input line 22.
+(pdftex.def)             Requested size: 172.5pt x 159.9774pt.
+
+<images/startup_disk.png, id=2, 728.7225pt x 468.75125pt>
+File: images/startup_disk.png Graphic file (type png)
+
+<use images/startup_disk.png>
+Package pdftex.def Info: images/startup_disk.png used on input line 29.
+(pdftex.def)             Requested size: 172.5pt x 110.95764pt.
+ [1
 
 
 
-{/usr/local/texlive/2012basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./installing.aux) ) 
+{/usr/local/texlive/2012basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./
+images/system_preferences.png> <./images/startup_disk.png>] <images/python_cons
+ole.png, id=13, 642.4pt x 465.74pt>
+File: images/python_console.png Graphic file (type png)
+
+<use images/python_console.png>
+Package pdftex.def Info: images/python_console.png used on input line 45.
+(pdftex.def)             Requested size: 172.5pt x 125.06213pt.
+
+<images/python_version.png, id=14, 711.65875pt x 727.71875pt>
+File: images/python_version.png Graphic file (type png)
+
+<use images/python_version.png>
+Package pdftex.def Info: images/python_version.png used on input line 54.
+(pdftex.def)             Requested size: 172.5pt x 176.38829pt.
+ [2 <./images/python_console.png> <./images/python_version.png>] (./installing.
+aux) ) 
 Here is how much of TeX's memory you used:
- 3018 strings out of 494578
- 39349 string characters out of 3168574
- 98371 words of memory out of 3000000
- 6195 multiletter control sequences out of 15000+200000
- 8584 words of font info for 33 fonts, out of 3000000 for 9000
+ 3136 strings out of 494578
+ 41115 string characters out of 3168574
+ 101496 words of memory out of 3000000
+ 6299 multiletter control sequences out of 15000+200000
+ 11363 words of font info for 45 fonts, out of 3000000 for 9000
  314 hyphenation exceptions out of 8191
- 45i,7n,37p,248b,198s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2012basic/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr10.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr17.pfb>
-Output written on installing.pdf (1 page, 28365 bytes).
+ 45i,7n,37p,263b,236s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbx12.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr10.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr17.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmtt10.pfb>
+Output written on installing.pdf (2 pages, 586386 bytes).
 PDF statistics:
- 20 PDF objects out of 1000 (max. 8388607)
- 13 compressed objects within 1 object stream
+ 35 PDF objects out of 1000 (max. 8388607)
+ 21 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
