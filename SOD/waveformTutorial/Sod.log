@@ -941,3 +941,30 @@ honey; I need hands outstretched to take it.
 2014-05-07 18:27:11,506 INFO EventArm sod.EventArm - Finished processing the event arm.
 2014-05-07 18:27:11,506 INFO EventArm sod.EventArm - Event arm finished
 2014-05-07 18:27:11,530 INFO WaveformArm 0 hibernate.SodDB - populate ECP/EVP ToDo: 0
+2014-05-07 21:10:53,938 INFO main sod.Start - logging configured
+2014-05-07 21:10:53,939 INFO main sod.Start - SOD version 3.2.3
+2014-05-07 21:10:53,939 INFO main sod.Start - Args:  -f recipe.xml
+2014-05-07 21:10:53,939 INFO main sod.Start - Recipe: recipe.xml
+2014-05-07 21:10:53,939 INFO main sod.Start - validating recipe...
+2014-05-07 21:10:54,494 INFO main sod.Start - Congratulations, valid recipe.
+2014-05-07 21:10:54,603 INFO main sod.Start - Database: jdbc:hsqldb:file:SodDb/SodDb
+2014-05-07 21:10:54,627 INFO main hibernate.AbstractHibernateDB - zombie session checker started
+2014-05-07 21:10:56,983 INFO main sod.LocalSeismogramArm - EventStation: edu.sc.seis.sod.subsetter.eventStation.DistanceRange
+2014-05-07 21:10:56,984 INFO main sod.LocalSeismogramArm - EventChannel: edu.sc.seis.sod.subsetter.eventChannel.PassEventChannel
+2014-05-07 21:10:56,986 INFO main sod.LocalSeismogramArm - RequestGenerator: edu.sc.seis.sod.subsetter.requestGenerator.PhaseRequest
+2014-05-07 21:10:56,987 INFO main sod.LocalSeismogramArm - RequestSubsetter: edu.sc.seis.sod.subsetter.request.PassRequest
+2014-05-07 21:10:56,988 INFO main sod.LocalSeismogramArm - SeismogramSourceLocator: edu.sc.seis.sod.source.seismogram.FdsnDataSelect
+2014-05-07 21:10:56,989 INFO main sod.LocalSeismogramArm - AvailableDataSubsetter: edu.sc.seis.sod.subsetter.availableData.SomeCoverage
+2014-05-07 21:10:56,990 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.SomeDataCoverage
+2014-05-07 21:10:56,991 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.PrintlineSeismogramProcess
+2014-05-07 21:10:56,992 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.SacWriter
+2014-05-07 21:10:56,993 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.ResponseGain
+2014-05-07 21:10:56,994 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.RMean
+2014-05-07 21:10:56,995 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.RTrend
+2014-05-07 21:10:56,996 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.Integrate
+2014-05-07 21:10:56,997 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.SacWriter
+2014-05-07 21:10:56,999 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.LegacyExecute
+2014-05-07 21:10:57,000 INFO main sod.Start - Start start()
+2014-05-07 21:10:57,012 INFO main sod.Start - All hope abandon: The database for this run, SodDb/SodDb.log appears to already exist. This is fine if you want to restart a run that crashed, but if you are trying to start a fresh SOD run, you may wish to delete this database directory first. Otherwise, SOD will consider any work in this database as already completed and will not redo it.
+2014-05-07 21:11:08,119 INFO main hibernate.HibernateUtil - using hsql dialect
+2014-05-07 21:11:08,121 INFO main hibernate.HibernateUtil - setup: org.hibernate.dialect.HSQLDialect org.hsqldb.jdbcDriver  jdbc:hsqldb:file:SodDb/SodDb  sa  
