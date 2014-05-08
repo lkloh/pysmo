@@ -1,0 +1,18 @@
+2014-05-07 15:54:55,090 ERROR main exceptionHandler.Log4jReporter - Problem in main, quiting
+edu.sc.seis.sod.ConfigurationException: Code 'II ' does not look like a network code, valid examples are G, IU and YJ07
+	at edu.sc.seis.sod.subsetter.network.NetworkCode.<init>(NetworkCode.java:21)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at edu.sc.seis.sod.SodUtil.loadClass(SodUtil.java:394)
+	at edu.sc.seis.sod.SodUtil.load(SodUtil.java:162)
+	at edu.sc.seis.sod.NetworkArm.processConfig(NetworkArm.java:121)
+	at edu.sc.seis.sod.NetworkArm.<init>(NetworkArm.java:59)
+	at edu.sc.seis.sod.Start.parseArms(Start.java:528)
+	at edu.sc.seis.sod.Start.<init>(Start.java:228)
+	at edu.sc.seis.sod.Start.<init>(Start.java:165)
+	at edu.sc.seis.sod.Start.main(Start.java:730)
+2014-05-07 15:54:55,116 ERROR main exceptionHandler.Log4jReporter - DefaultExtractor: 
+2014-05-07 15:55:27,428 WARN NetworkArm sod.UserReportRetryStrategy - The default server just produced an error (edu.sc.seis.sod.source.SodSourceException).  SOD will continue trying it until it recovers at which point an all clear message will be issued.  If it never recovers, email sod@seis.sc.edu with this report and we can inform the server maintainer.  If you're tired of waiting, press Ctrl-C to quit.  
+2014-05-07 15:55:27,858 WARN NetworkArm sod.UserReportRetryStrategy - All clear!  default just recovered.  Processing will continue normally.

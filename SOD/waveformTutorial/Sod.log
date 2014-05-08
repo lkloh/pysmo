@@ -1,0 +1,943 @@
+2014-05-07 18:13:02,918 INFO main sod.Start - logging configured
+2014-05-07 18:13:03,001 INFO main sod.Start - SOD version 3.2.3
+2014-05-07 18:13:03,001 INFO main sod.Start - Args:  -f recipe.xml
+2014-05-07 18:13:03,001 INFO main sod.Start - Recipe: recipe.xml
+2014-05-07 18:13:03,001 INFO main sod.Start - validating recipe...
+2014-05-07 18:13:03,719 INFO main sod.Start - Congratulations, valid recipe.
+2014-05-07 18:13:03,739 INFO main sod.Start - Database: jdbc:hsqldb:file:SodDb/SodDb
+2014-05-07 18:13:03,983 INFO main hibernate.AbstractHibernateDB - zombie session checker started
+2014-05-07 18:13:06,005 INFO main sod.LocalSeismogramArm - EventStation: edu.sc.seis.sod.subsetter.eventStation.DistanceRange
+2014-05-07 18:13:06,005 INFO main sod.LocalSeismogramArm - EventChannel: edu.sc.seis.sod.subsetter.eventChannel.PassEventChannel
+2014-05-07 18:13:06,005 INFO main sod.LocalSeismogramArm - RequestGenerator: edu.sc.seis.sod.subsetter.requestGenerator.PhaseRequest
+2014-05-07 18:13:06,005 INFO main sod.LocalSeismogramArm - RequestSubsetter: edu.sc.seis.sod.subsetter.request.PassRequest
+2014-05-07 18:13:06,006 INFO main sod.LocalSeismogramArm - SeismogramSourceLocator: edu.sc.seis.sod.source.seismogram.FdsnDataSelect
+2014-05-07 18:13:06,006 INFO main sod.LocalSeismogramArm - AvailableDataSubsetter: edu.sc.seis.sod.subsetter.availableData.SomeCoverage
+2014-05-07 18:13:06,006 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.SomeDataCoverage
+2014-05-07 18:13:06,006 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.PrintlineSeismogramProcess
+2014-05-07 18:13:06,006 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.SacWriter
+2014-05-07 18:13:06,006 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.ResponseGain
+2014-05-07 18:13:06,006 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.RMean
+2014-05-07 18:13:06,006 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.RTrend
+2014-05-07 18:13:06,006 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.SacWriter
+2014-05-07 18:13:06,006 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.LegacyExecute
+2014-05-07 18:13:06,006 INFO main sod.Start - Start start()
+2014-05-07 18:13:06,311 INFO main hibernate.HibernateUtil - using hsql dialect
+2014-05-07 18:13:06,328 INFO main hibernate.HibernateUtil - setup: org.hibernate.dialect.HSQLDialect org.hsqldb.jdbcDriver  jdbc:hsqldb:file:SodDb/SodDb  sa  
+2014-05-07 18:13:08,067 INFO main hibernate.AbstractHibernateDB - Commit session before creation, nothing to do
+2014-05-07 18:13:08,067 INFO main sod.CommonAccess - CommonAccess.initialize
+2014-05-07 18:13:08,160 INFO main jacorb.config - configuration jacorb loaded from file /Users/lkloh/sod-3.2.3/etc/jacorb.properties
+2014-05-07 18:13:08,188 INFO main orb.print_version - 
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JacORB V 2.3.1_USC2, www.jacorb.org
+	(C) The JacORB project 27-May-2009
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2014-05-07 18:13:08,210 INFO main fissuresUtil.Dissendium - Loading darkMagic passwords from system properties
+2014-05-07 18:13:08,210 INFO main fissuresUtil.Dissendium - Loading IRIS passwords from system properties
+2014-05-07 18:13:08,219 INFO main fissuresUtil.Dissendium - Dissendium NOT registered with orb as no passwords specified.
+2014-05-07 18:13:08,251 INFO main jacorb.orb - Property "jacorb.hashtable_class" is set to: java.util.HashMap
+2014-05-07 18:13:08,251 INFO main sod.CommonAccess - ORB class is org.jacorb.orb.ORB
+2014-05-07 18:13:11,161 INFO WaveformArm 0 sod.WaveformArm - Starting WaveformArm
+2014-05-07 18:13:11,161 INFO EventArm sod.EventArm - edu.sc.seis.sod.source.event.FdsnEvent@3ee545fa covers events from 2003-01-01T00:00:00.000GMT to 2003-01-10T23:59:59.999GMT
+2014-05-07 18:13:11,241 INFO main sod.Start - Finished starting all threads.
+2014-05-07 18:13:11,271 INFO retry loader hibernate.SodDB - retry query: from edu.sc.seis.sod.EventChannelPair  where (status.standingInt = 3 or status.standingInt = 4 )  and seconds_between(:now, lastQuery) > :minDelay  and numRetries < 5 and (seconds_between(:now, lastQuery) > :maxDelay or seconds_between(:now, lastQuery) > power(:base, numRetries))  order by numRetries
+2014-05-07 18:13:11,283 INFO Refresh NetworkArm sod.RefreshNetworkArm - Refreshing Network Arm
+2014-05-07 18:13:11,287 INFO Refresh NetworkArm sod.NetworkArm - Getting networks from server
+2014-05-07 18:13:11,306 INFO WaveformArm 0 hibernate.SodDB - populate ECP/EVP ToDo: 0
+2014-05-07 18:13:11,654 INFO EventArm sod.EventArm - Handling 0 events from http://service.iris.edu:80/fdsnws/event/1/query?catalog=NEIC%20PDE&includeallmagnitudes=true&minmagnitude=5.0&orderby=time-asc
+2014-05-07 18:13:11,676 INFO Refresh NetworkArm sod.NetworkArm - Found 1 networks
+2014-05-07 18:13:11,719 INFO Refresh NetworkArm sod.NetworkArm - store network: II 1 1
+2014-05-07 18:13:11,719 INFO Refresh NetworkArm sod.NetworkArm - 1 networks passed
+2014-05-07 18:13:11,802 INFO EventArm sod.EventArm - Handling 0 events from http://service.iris.edu:80/fdsnws/event/1/query?catalog=NEIC%20PDE&includeallmagnitudes=true&minmagnitude=5.0&orderby=time-asc
+2014-05-07 18:13:11,809 INFO EventArm sod.EventArm - Finished processing the event arm.
+2014-05-07 18:13:11,809 INFO EventArm sod.EventArm - Event arm finished
+2014-05-07 18:13:12,082 INFO Refresh NetworkArm sod.NetworkArm - Store AAK as 1 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,092 INFO Refresh NetworkArm sod.NetworkArm - Store ABKT as 2 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,101 INFO Refresh NetworkArm sod.NetworkArm - Store ALE as 3 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,111 INFO Refresh NetworkArm sod.NetworkArm - Store ARU as 4 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,122 INFO Refresh NetworkArm sod.NetworkArm - Store ASCN as 5 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,141 INFO Refresh NetworkArm sod.NetworkArm - Store BFO as 6 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,149 INFO Refresh NetworkArm sod.NetworkArm - Store BORG as 7 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,156 INFO Refresh NetworkArm sod.NetworkArm - Store BRVK as 8 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,164 INFO Refresh NetworkArm sod.NetworkArm - Store CMLA as 9 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,174 INFO Refresh NetworkArm sod.NetworkArm - Store COCO as 10 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,184 INFO Refresh NetworkArm sod.NetworkArm - Store EFI as 11 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,196 INFO Refresh NetworkArm sod.NetworkArm - Store ERM as 12 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,203 INFO Refresh NetworkArm sod.NetworkArm - Store ESK as 13 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,211 INFO Refresh NetworkArm sod.NetworkArm - Store FFC as 14 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,222 INFO Refresh NetworkArm sod.NetworkArm - Store HOPE as 15 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,233 INFO Refresh NetworkArm sod.NetworkArm - Store JTS as 16 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,243 INFO Refresh NetworkArm sod.NetworkArm - Store KAPI as 17 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,254 INFO Refresh NetworkArm sod.NetworkArm - Store KDAK as 18 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,264 INFO Refresh NetworkArm sod.NetworkArm - Store KIV as 19 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,275 INFO Refresh NetworkArm sod.NetworkArm - Store KURK as 20 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,286 INFO Refresh NetworkArm sod.NetworkArm - Store KWAJ as 21 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,296 INFO Refresh NetworkArm sod.NetworkArm - Store LVZ as 22 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,305 INFO Refresh NetworkArm sod.NetworkArm - Store MBAR as 23 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,315 INFO Refresh NetworkArm sod.NetworkArm - Store MSEY as 24 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,322 INFO Refresh NetworkArm sod.NetworkArm - Store MSVF as 25 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,330 INFO Refresh NetworkArm sod.NetworkArm - Store NIL as 26 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,338 INFO Refresh NetworkArm sod.NetworkArm - Store NNA as 27 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,346 INFO Refresh NetworkArm sod.NetworkArm - Store NRIL as 28 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,354 INFO Refresh NetworkArm sod.NetworkArm - Store OBN as 29 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,362 INFO Refresh NetworkArm sod.NetworkArm - Store PALK as 30 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,368 INFO Refresh NetworkArm sod.NetworkArm - Store PFO as 31 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,374 INFO Refresh NetworkArm sod.NetworkArm - Store RAYN as 32 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,380 INFO Refresh NetworkArm sod.NetworkArm - Store RPN as 33 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,386 INFO Refresh NetworkArm sod.NetworkArm - Store SACV as 34 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,393 INFO Refresh NetworkArm sod.NetworkArm - Store SHEL as 35 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,400 INFO Refresh NetworkArm sod.NetworkArm - Store SUR as 36 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,407 INFO Refresh NetworkArm sod.NetworkArm - Store TAU as 37 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,413 INFO Refresh NetworkArm sod.NetworkArm - Store TLY as 38 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,419 INFO Refresh NetworkArm sod.NetworkArm - Store WRAB as 39 in edu.sc.seis.fissuresUtil.hibernate.NetworkDB@2efe83e5
+2014-05-07 18:13:12,424 INFO Refresh NetworkArm sod.RefreshNetworkArm - found 39 stations in II.19860101T00:00:00.000Z
+2014-05-07 18:13:12,660 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.AAK.  .LOG.1990-10-12T00:00:00.000GMT
+2014-05-07 18:13:12,697 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.AAK.00.LHE.20021111T09:55:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,699 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.AAK.00.LHN.20021111T09:55:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,701 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.AAK.00.LHZ.20021111T09:55:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,702 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.AAK.00.VHE.20021111T09:55:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,704 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.AAK.00.VHN.20021111T09:55:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,706 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.AAK.00.VHZ.20021111T09:55:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,708 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.AAK.00.ENE.19990310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,710 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.AAK.00.ENN.19990310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,713 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.AAK.00.ENZ.19990310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,714 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.AAK.00.LNE.19990310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,716 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.AAK.00.LNN.19990310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,718 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.AAK.00.LNZ.19990310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,720 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.AAK.00.SHE.19990310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,722 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.AAK.00.SHN.19990310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,724 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.AAK.00.SHZ.19990310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,726 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.AAK.00.SLE.19990310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,728 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.AAK.00.SLN.19990310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,731 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.AAK.00.SLZ.19990310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,733 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.AAK.00.WDO.19990310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,734 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.AAK.00.VME.19940112T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,736 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.AAK.00.VMN.19940112T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,738 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.AAK.00.VMZ.19940112T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,740 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.AAK.  .LOG.19901012T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,875 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.ABKT.  .LOG.1993-04-25T00:00:00.000GMT
+2014-05-07 18:13:12,897 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ABKT.00.LHE.20020924T06:20:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,898 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ABKT.00.LHN.20020924T06:20:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,899 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ABKT.00.LHZ.20020924T06:20:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,900 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ABKT.00.VHE.20020924T06:20:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,901 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ABKT.00.VHN.20020924T06:20:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,902 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ABKT.00.VHZ.20020924T06:20:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,903 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ABKT.00.ENE.19990218T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,905 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ABKT.00.ENN.19990218T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,906 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ABKT.00.ENZ.19990218T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,907 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ABKT.00.LNE.19990218T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,908 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ABKT.00.LNN.19990218T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,910 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ABKT.00.LNZ.19990218T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,911 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ABKT.00.SHE.19990218T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,912 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ABKT.00.SHN.19990218T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,913 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ABKT.00.SHZ.19990218T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,914 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ABKT.00.SLE.19990218T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,915 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ABKT.00.SLN.19990218T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,916 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ABKT.00.SLZ.19990218T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,917 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ABKT.00.WDO.19990218T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,918 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ABKT.  .LOG.19930425T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,919 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ABKT.00.VME.19930425T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,920 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ABKT.00.VMN.19930425T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:12,921 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ABKT.00.VMZ.19930425T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,064 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.ALE.  .LOG.1990-02-19T00:00:00.000GMT
+2014-05-07 18:13:13,102 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ALE.00.LHE.19950612T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,104 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ALE.00.LHN.19950612T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,107 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ALE.00.LHZ.19950612T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,109 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ALE.00.LLE.19950612T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,111 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ALE.00.LLN.19950612T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,113 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ALE.00.LLZ.19950612T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,114 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ALE.00.VHE.19950612T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,116 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ALE.00.VHN.19950612T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,117 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ALE.00.VHZ.19950612T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,119 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ALE.00.VMZ.19930126T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,120 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ALE.00.VME.19920409T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,121 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ALE.00.VMN.19920409T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,123 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ALE.  .LOG.19900219T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,382 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.ARU.  .LOG.1988-09-14T00:00:00.000GMT
+2014-05-07 18:13:13,396 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.00.ENE.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,397 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.00.ENN.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,398 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.00.ENZ.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,399 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.00.LHE.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,400 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.00.LHN.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,401 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.00.LHZ.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,402 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.00.LNE.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,403 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.00.LNN.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,404 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.00.LNZ.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,405 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.00.SHE.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,406 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.00.SHN.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,407 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.00.SHZ.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,408 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.00.SLE.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,409 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.00.SLN.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,410 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.00.SLZ.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,411 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.00.VHE.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,412 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.00.VHN.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,413 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.00.VHZ.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,413 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.00.WDO.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,436 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.XX.LHE.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,438 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.XX.LHN.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,440 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.XX.LHZ.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,442 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.XX.VHE.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,444 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.XX.VHN.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,446 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.XX.VHZ.19990802T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,448 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.00.VME.19931217T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,451 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.00.VMN.19931217T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,453 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.00.VMZ.19931217T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,455 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ARU.  .LOG.19880914T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,571 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.ASCN.  .LOG.1994-10-01T00:00:00.000GMT
+2014-05-07 18:13:13,587 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ASCN.00.LHE.20021127T15:12:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,588 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ASCN.00.LHN.20021127T15:12:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,589 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ASCN.00.LHZ.20021127T15:12:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,590 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ASCN.00.VHE.20021127T15:12:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,591 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ASCN.00.VHN.20021127T15:12:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,592 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ASCN.00.VHZ.20021127T15:12:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,623 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ASCN.  .LOG.19941001T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,624 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ASCN.00.VME.19941001T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,626 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ASCN.00.VMN.19941001T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,627 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ASCN.00.VMZ.19941001T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,749 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.BFO.  .LOG.1996-05-29T00:00:00.000GMT
+2014-05-07 18:13:13,770 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BFO.00.LHE.20020830T07:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,771 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BFO.00.LHN.20020830T07:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,772 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BFO.00.LHZ.20020830T07:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,773 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BFO.00.VHE.20020830T07:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,774 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BFO.00.VHN.20020830T07:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,775 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BFO.00.VHZ.20020830T07:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,776 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BFO.00.WDI.20020219T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,777 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BFO.00.VAE.20010130T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,778 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BFO.00.VAN.20010130T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,779 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BFO.00.UGZ.19960719T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,780 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BFO.00.VGZ.19960719T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,781 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BFO.00.VSA.19960719T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,782 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BFO.00.VSB.19960719T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,783 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BFO.00.VSC.19960719T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,784 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BFO.00.WDO.19960719T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,786 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BFO.  .LOG.19960529T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,946 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.BORG.  .LOG.1994-07-30T00:00:00.000GMT
+2014-05-07 18:13:13,964 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BORG.00.LHE.20020718T14:25:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,965 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BORG.00.LHN.20020718T14:25:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,966 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BORG.00.LHZ.20020718T14:25:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,967 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BORG.00.VHE.20020718T14:25:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,968 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BORG.00.VHN.20020718T14:25:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,969 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BORG.00.VHZ.20020718T14:25:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,970 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BORG.00.VME.19950215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,971 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BORG.00.VMN.19950215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:13,972 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BORG.00.VMZ.19950215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,007 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BORG.  .LOG.19940730T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,142 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.BRVK.  .LOG.1994-09-01T00:00:00.000GMT
+2014-05-07 18:13:14,157 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BRVK.00.LHE.20020805T05:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,158 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BRVK.00.LHN.20020805T05:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,159 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BRVK.00.LHZ.20020805T05:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,160 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BRVK.00.VHE.20020805T05:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,161 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BRVK.00.VHN.20020805T05:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,162 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BRVK.00.VHZ.20020805T05:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,163 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BRVK.00.ENE.19990206T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,164 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BRVK.00.ENN.19990206T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,165 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BRVK.00.ENZ.19990206T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,166 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BRVK.00.LNE.19990206T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,167 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BRVK.00.LNN.19990206T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,167 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BRVK.00.LNZ.19990206T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,168 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BRVK.00.SHE.19990206T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,169 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BRVK.00.SHN.19990206T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,169 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BRVK.00.SHZ.19990206T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,170 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BRVK.00.SLE.19990206T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,171 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BRVK.00.SLN.19990206T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,171 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BRVK.00.SLZ.19990206T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,172 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BRVK.00.WDO.19990206T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,173 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BRVK.00.VME.19950403T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,174 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BRVK.00.VMN.19950403T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,174 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BRVK.00.VMZ.19950403T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,175 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.BRVK.  .LOG.19940901T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,324 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.CMLA.  .LOG.1996-03-10T00:00:00.000GMT
+2014-05-07 18:13:14,343 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.CMLA.00.LHE.20021003T13:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,343 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.CMLA.00.LHN.20021003T13:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,344 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.CMLA.00.LHZ.20021003T13:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,345 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.CMLA.00.VHE.20021003T13:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,345 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.CMLA.00.VHN.20021003T13:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,346 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.CMLA.00.VHZ.20021003T13:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,347 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.CMLA.  .LOG.19960310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,347 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.CMLA.00.ENE.19960310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,348 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.CMLA.00.ENN.19960310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,349 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.CMLA.00.ENZ.19960310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,349 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.CMLA.00.LNE.19960310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,350 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.CMLA.00.LNN.19960310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,351 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.CMLA.00.LNZ.19960310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,351 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.CMLA.00.VME.19960310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,352 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.CMLA.00.VMN.19960310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,353 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.CMLA.00.VMZ.19960310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,541 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.COCO.  .LOG.1996-12-15T00:00:00.000GMT
+2014-05-07 18:13:14,552 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.COCO.  .LOG.19961215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,563 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.COCO.00.LH1.19961215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,564 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.COCO.00.LH2.19961215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,564 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.COCO.00.LHZ.19961215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,565 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.COCO.00.VH1.19961215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,566 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.COCO.00.VH2.19961215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,566 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.COCO.00.VHZ.19961215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,567 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.COCO.00.VME.19961215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,568 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.COCO.00.VMN.19961215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,568 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.COCO.00.VMZ.19961215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,597 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.COCO.XX.LH1.19961215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,599 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.COCO.XX.LH2.19961215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,600 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.COCO.XX.LHZ.19961215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,602 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.COCO.XX.VH1.19961215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,603 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.COCO.XX.VH2.19961215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,604 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.COCO.XX.VHZ.19961215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,718 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.EFI.  .LOG.1996-02-16T00:00:00.000GMT
+2014-05-07 18:13:14,754 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.EFI.00.LH1.19960227T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,756 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.EFI.00.LH2.19960227T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,757 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.EFI.00.VH1.19960227T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,759 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.EFI.00.VH2.19960227T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,760 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.EFI.00.VME.19960227T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,761 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.EFI.00.VMN.19960227T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,776 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.EFI.XX.LH1.19960227T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,778 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.EFI.XX.LH2.19960227T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,780 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.EFI.XX.VH1.19960227T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,782 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.EFI.XX.VH2.19960227T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,784 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.EFI.  .LOG.19960216T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,793 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.EFI.00.ENE.19960216T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,794 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.EFI.00.ENN.19960216T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,796 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.EFI.00.ENZ.19960216T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,797 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.EFI.00.LHZ.19960216T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,798 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.EFI.00.LNE.19960216T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,799 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.EFI.00.LNN.19960216T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,800 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.EFI.00.LNZ.19960216T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,802 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.EFI.00.VHZ.19960216T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,803 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.EFI.00.VMZ.19960216T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,808 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.EFI.XX.LHZ.19960216T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,810 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.EFI.XX.VHZ.19960216T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,930 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.ERM.  .LOG.1990-05-21T00:00:00.000GMT
+2014-05-07 18:13:14,944 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.00.LHE.20030107T06:23:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,945 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.00.LHN.20030107T06:23:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,945 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.00.LHZ.20030107T06:23:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,946 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.00.VHE.20030107T06:23:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,947 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.00.VHN.20030107T06:23:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,947 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.00.VHZ.20030107T06:23:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,965 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.00.ENE.19950221T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,966 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.00.ENN.19950221T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,968 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.00.ENZ.19950221T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,969 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.00.LHE.19950221T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,970 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.00.LHN.19950221T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,972 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.00.LHZ.19950221T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,973 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.00.LNE.19950221T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,975 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.00.LNN.19950221T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,976 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.00.LNZ.19950221T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,977 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.00.VHE.19950221T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,978 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.00.VHN.19950221T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,979 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.00.VHZ.19950221T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,981 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.00.VME.19950221T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,982 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.00.VMN.19950221T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,982 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.00.VMZ.19950221T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,997 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.XX.LHE.19950221T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,998 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.XX.LHN.19950221T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:14,999 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.XX.LHZ.19950221T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,000 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.XX.VHE.19950221T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,001 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.XX.VHN.19950221T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,002 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.XX.VHZ.19950221T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,003 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ERM.  .LOG.19900521T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,271 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.ESK.  .LOG.1987-11-13T00:00:00.000GMT
+2014-05-07 18:13:15,285 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ESK.00.LHE.19931101T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,286 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ESK.00.LHN.19931101T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,287 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ESK.00.LHZ.19931101T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,287 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ESK.00.VHE.19931101T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,288 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ESK.00.VHN.19931101T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,289 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ESK.00.VHZ.19931101T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,290 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ESK.00.VME.19931101T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,291 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ESK.00.VMN.19931101T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,292 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ESK.00.VMZ.19931101T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,305 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ESK.XX.LHE.19931101T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,306 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ESK.XX.LHN.19931101T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,307 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ESK.XX.LHZ.19931101T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,309 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ESK.XX.VHE.19931101T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,310 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ESK.XX.VHN.19931101T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,311 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ESK.XX.VHZ.19931101T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,312 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.ESK.  .LOG.19871113T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,418 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.FFC.  .LOG.1993-08-28T00:00:00.000GMT
+2014-05-07 18:13:15,432 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.FFC.00.LHE.20020707T20:22:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,433 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.FFC.00.LHN.20020707T20:22:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,433 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.FFC.00.LHZ.20020707T20:22:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,434 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.FFC.00.VHE.20020707T20:22:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,434 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.FFC.00.VHN.20020707T20:22:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,435 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.FFC.00.VHZ.20020707T20:22:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,436 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.FFC.00.SHE.19950616T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,437 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.FFC.00.SHN.19950616T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,437 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.FFC.00.SHZ.19950616T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,438 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.FFC.00.SLE.19950616T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,439 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.FFC.00.SLN.19950616T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,440 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.FFC.00.SLZ.19950616T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,441 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.FFC.  .LOG.19930828T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,442 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.FFC.00.VME.19930828T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,443 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.FFC.00.VMN.19930828T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,444 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.FFC.00.VMZ.19930828T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,622 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.HOPE.  .LOG.1996-12-10T00:00:00.000GMT
+2014-05-07 18:13:15,640 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.HOPE.00.LHE.20020412T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,640 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.HOPE.00.LHN.20020412T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,641 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.HOPE.00.LHZ.20020412T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,641 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.HOPE.00.VHE.20020412T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,642 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.HOPE.00.VHN.20020412T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,642 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.HOPE.00.VHZ.20020412T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,652 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.HOPE.XX.LHE.20020412T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,653 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.HOPE.XX.LHN.20020412T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,654 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.HOPE.XX.LHZ.20020412T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,655 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.HOPE.XX.VHE.20020412T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,655 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.HOPE.XX.VHN.20020412T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,656 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.HOPE.XX.VHZ.20020412T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,657 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.HOPE.  .LOG.19961210T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,657 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.HOPE.00.ENE.19961210T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,658 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.HOPE.00.ENN.19961210T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,659 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.HOPE.00.ENZ.19961210T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,659 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.HOPE.00.LNE.19961210T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,660 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.HOPE.00.LNN.19961210T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,661 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.HOPE.00.LNZ.19961210T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,662 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.HOPE.00.VME.19961210T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,663 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.HOPE.00.VMN.19961210T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:15,663 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.HOPE.00.VMZ.19961210T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:16,987 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.JTS.  .LOG.1995-04-23T00:00:00.000GMT
+2014-05-07 18:13:17,004 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.JTS.00.LHE.20020828T18:42:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,004 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.JTS.00.LHN.20020828T18:42:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,005 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.JTS.00.LHZ.20020828T18:42:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,005 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.JTS.00.VHE.20020828T18:42:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,006 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.JTS.00.VHN.20020828T18:42:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,006 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.JTS.00.VHZ.20020828T18:42:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,007 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.JTS.00.VMZ.19981015T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,007 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.JTS.  .LOG.19950423T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,008 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.JTS.00.ENE.19950423T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,008 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.JTS.00.ENN.19950423T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,009 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.JTS.00.ENZ.19950423T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,009 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.JTS.00.LNE.19950423T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,010 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.JTS.00.LNN.19950423T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,011 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.JTS.00.LNZ.19950423T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,011 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.JTS.00.VME.19950423T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,012 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.JTS.00.VMN.19950423T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,180 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.KAPI.  .LOG.1999-02-06T00:00:00.000GMT
+2014-05-07 18:13:17,196 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KAPI.00.LHE.20020117T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,196 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KAPI.00.LHN.20020117T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,197 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KAPI.00.LHZ.20020117T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,198 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KAPI.00.VHE.20020117T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,198 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KAPI.00.VHN.20020117T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,199 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KAPI.00.VHZ.20020117T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,208 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KAPI.XX.LHE.20020117T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,209 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KAPI.XX.LHN.20020117T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,209 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KAPI.XX.LHZ.20020117T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,210 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KAPI.XX.VHE.20020117T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,211 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KAPI.XX.VHN.20020117T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,212 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KAPI.XX.VHZ.20020117T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,213 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KAPI.  .LOG.19990206T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,214 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KAPI.00.ENE.19990206T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,215 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KAPI.00.ENN.19990206T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,215 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KAPI.00.ENZ.19990206T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,216 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KAPI.00.LNE.19990206T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,217 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KAPI.00.LNN.19990206T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,219 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KAPI.00.LNZ.19990206T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,220 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KAPI.00.VME.19990206T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,221 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KAPI.00.VMN.19990206T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,222 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KAPI.00.VMZ.19990206T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,222 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KAPI.00.WDO.19990206T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,368 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.KDAK.  .LOG.1997-06-09T00:00:00.000GMT
+2014-05-07 18:13:17,378 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.00.ENE.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,378 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.00.ENN.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,379 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.00.ENZ.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,380 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.00.LHE.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,380 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.00.LHN.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,381 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.00.LHZ.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,381 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.00.LNE.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,382 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.00.LNN.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,382 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.00.LNZ.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,383 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.00.VHE.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,383 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.00.VHN.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,384 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.00.VHZ.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,384 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.00.VME.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,385 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.00.VMN.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,385 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.00.VMZ.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,386 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.00.WDI.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,386 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.00.WDO.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,403 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.10.LH1.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,404 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.10.LH2.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,405 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.10.LHE.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,407 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.10.LHN.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,408 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.10.LHZ.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,409 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.10.VH1.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,411 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.10.VH2.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,412 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.10.VHE.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,413 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.10.VHN.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,414 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.10.VHZ.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,415 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.10.VMU.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,416 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.10.VMV.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,417 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.10.VMW.20021016T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,418 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KDAK.  .LOG.19970609T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,605 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.KIV.  .LOG.1994-02-01T00:00:00.000GMT
+2014-05-07 18:13:17,614 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KIV.00.LHE.20020819T08:30:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,615 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KIV.00.LHN.20020819T08:30:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,615 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KIV.00.LHZ.20020819T08:30:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,616 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KIV.00.VHE.20020819T08:30:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,616 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KIV.00.VHN.20020819T08:30:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,617 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KIV.00.VHZ.20020819T08:30:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,633 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KIV.10.HHE.19991104T08:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,633 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KIV.10.HHN.19991104T08:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,634 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KIV.10.HHZ.19991104T08:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,635 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KIV.10.HLE.19991104T08:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,635 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KIV.10.HLN.19991104T08:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,636 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KIV.10.HLZ.19991104T08:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,637 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KIV.00.ENE.19980713T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,638 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KIV.00.ENN.19980713T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,638 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KIV.00.ENZ.19980713T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,639 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KIV.00.LNE.19980713T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,640 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KIV.00.LNN.19980713T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,640 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KIV.00.LNZ.19980713T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,641 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KIV.00.VME.19980713T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,643 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KIV.00.VMN.19980713T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,644 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KIV.00.VMZ.19980713T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,645 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KIV.00.WDO.19980713T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,646 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KIV.  .LOG.19940201T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,762 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.KURK.  .LOG.1995-03-26T00:00:00.000GMT
+2014-05-07 18:13:17,773 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KURK.00.LHE.20020909T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,773 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KURK.00.LHN.20020909T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,774 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KURK.00.LHZ.20020909T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,774 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KURK.00.VHE.20020909T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,774 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KURK.00.VHN.20020909T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,775 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KURK.00.VHZ.20020909T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,775 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KURK.00.ENE.19990130T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,776 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KURK.00.ENN.19990130T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,777 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KURK.00.ENZ.19990130T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,777 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KURK.00.LNE.19990130T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,778 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KURK.00.LNN.19990130T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,778 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KURK.00.LNZ.19990130T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,779 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KURK.00.SHE.19990130T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,780 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KURK.00.SHN.19990130T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,780 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KURK.00.SHZ.19990130T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,781 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KURK.00.SLE.19990130T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,782 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KURK.00.SLN.19990130T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,782 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KURK.00.SLZ.19990130T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,783 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KURK.00.WDO.19990130T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,783 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KURK.  .LOG.19950326T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,784 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KURK.00.VME.19950326T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,784 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KURK.00.VMN.19950326T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,785 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KURK.00.VMZ.19950326T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,900 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.KWAJ.  .LOG.1999-06-22T00:00:00.000GMT
+2014-05-07 18:13:17,919 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.00.LHE.20030106T22:38:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,920 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.00.LHN.20030106T22:38:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,920 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.00.LHZ.20030106T22:38:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,921 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.00.VHE.20030106T22:38:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,921 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.00.VHN.20030106T22:38:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,921 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.00.VHZ.20030106T22:38:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,922 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.  .LOG.19990622T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,929 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.00.ENE.19990622T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,930 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.00.ENN.19990622T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,930 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.00.ENZ.19990622T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,931 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.00.LHE.19990622T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,931 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.00.LHN.19990622T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,932 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.00.LHZ.19990622T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,932 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.00.LNE.19990622T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,933 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.00.LNN.19990622T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,933 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.00.LNZ.19990622T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,934 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.00.VHE.19990622T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,934 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.00.VHN.19990622T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,935 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.00.VHZ.19990622T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,935 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.00.VME.19990622T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,936 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.00.VMN.19990622T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,936 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.00.VMZ.19990622T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,936 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.00.WDO.19990622T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,962 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.XX.LHE.19990622T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,963 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.XX.LHN.19990622T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,964 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.XX.LHZ.19990622T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,965 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.XX.VHE.19990622T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,965 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.XX.VHN.19990622T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:17,966 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.KWAJ.XX.VHZ.19990622T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,102 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.LVZ.  .LOG.1992-12-01T00:00:00.000GMT
+2014-05-07 18:13:18,112 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.LVZ.00.LHE.20021016T06:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,112 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.LVZ.00.LHN.20021016T06:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,113 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.LVZ.00.LHZ.20021016T06:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,113 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.LVZ.00.VHE.20021016T06:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,113 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.LVZ.00.VHN.20021016T06:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,114 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.LVZ.00.VHZ.20021016T06:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,114 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.LVZ.00.EHE.20000613T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,115 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.LVZ.00.EHN.20000613T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,115 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.LVZ.00.EHZ.20000613T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,116 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.LVZ.00.ELE.20000613T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,116 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.LVZ.00.ELN.20000613T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,117 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.LVZ.00.ELZ.20000613T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,117 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.LVZ.00.ENE.20000613T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,118 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.LVZ.00.ENN.20000613T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,119 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.LVZ.00.ENZ.20000613T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,119 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.LVZ.00.LNE.20000613T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,120 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.LVZ.00.LNN.20000613T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,121 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.LVZ.00.LNZ.20000613T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,121 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.LVZ.00.WDO.20000613T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,122 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.LVZ.  .LOG.19921201T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,122 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.LVZ.00.VME.19921201T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,123 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.LVZ.00.VMN.19921201T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,123 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.LVZ.00.VMZ.19921201T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,270 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.MBAR.  .LOG.1999-09-22T00:00:00.000GMT
+2014-05-07 18:13:18,306 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MBAR.00.LH1.20011004T06:50:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,307 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MBAR.00.LH2.20011004T06:50:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,307 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MBAR.00.LHZ.20011004T06:50:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,308 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MBAR.00.VH1.20011004T06:50:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,309 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MBAR.00.VH2.20011004T06:50:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,310 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MBAR.00.VHZ.20011004T06:50:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,311 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MBAR.00.VME.20011004T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,312 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MBAR.00.VMN.20011004T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,312 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MBAR.  .LOG.19990922T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,313 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MBAR.00.ENE.19990922T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,314 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MBAR.00.ENN.19990922T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,315 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MBAR.00.ENZ.19990922T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,316 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MBAR.00.LNE.19990922T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,317 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MBAR.00.LNN.19990922T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,321 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MBAR.00.LNZ.19990922T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,322 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MBAR.00.VMZ.19990922T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,323 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MBAR.00.WDO.19990922T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,507 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.MSEY.  .LOG.1995-05-15T00:00:00.000GMT
+2014-05-07 18:13:18,518 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSEY.00.LHE.19960827T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,518 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSEY.00.LHN.19960827T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,519 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSEY.00.LHZ.19960827T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,519 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSEY.00.VHE.19960827T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,520 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSEY.00.VHN.19960827T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,520 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSEY.00.VHZ.19960827T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,521 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSEY.00.VME.19960827T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,521 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSEY.00.VMN.19960827T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,522 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSEY.00.VMZ.19960827T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,532 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSEY.XX.LHE.19960827T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,533 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSEY.XX.LHN.19960827T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,534 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSEY.XX.LHZ.19960827T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,534 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSEY.XX.VHE.19960827T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,535 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSEY.XX.VHN.19960827T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,536 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSEY.XX.VHZ.19960827T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,560 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSEY.  .LOG.19950515T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,683 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.MSVF.  .LOG.1994-05-24T00:00:00.000GMT
+2014-05-07 18:13:18,702 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSVF.00.LH1.20020606T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,703 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSVF.00.LH2.20020606T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,703 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSVF.00.LHE.20020606T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,704 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSVF.00.LHN.20020606T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,705 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSVF.00.LHZ.20020606T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,706 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSVF.00.VH1.20020606T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,706 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSVF.00.VH2.20020606T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,707 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSVF.00.VHE.20020606T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,708 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSVF.00.VHN.20020606T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,708 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSVF.00.VHZ.20020606T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,709 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSVF.00.VME.20020606T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,709 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSVF.00.VMN.20020606T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,710 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSVF.00.VMZ.20020606T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,710 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.MSVF.  .LOG.19940524T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,929 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.NIL.  .LOG.1994-12-18T00:00:00.000GMT
+2014-05-07 18:13:18,940 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NIL.00.LHE.20020906T05:40:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,940 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NIL.00.LHN.20020906T05:40:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,940 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NIL.00.LHZ.20020906T05:40:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,941 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NIL.00.VHE.20020906T05:40:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,941 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NIL.00.VHN.20020906T05:40:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,942 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NIL.00.VHZ.20020906T05:40:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,942 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NIL.00.VME.19970520T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,942 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NIL.00.VMN.19970520T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,943 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NIL.00.VMZ.19970520T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,962 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NIL.00.ENE.19950418T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,963 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NIL.00.ENN.19950418T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,963 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NIL.00.ENZ.19950418T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,963 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NIL.00.LNE.19950418T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,964 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NIL.00.LNN.19950418T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,964 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NIL.00.LNZ.19950418T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,965 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NIL.  .LOG.19941218T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,971 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NIL.P1.LXE.19941218T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,972 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NIL.P1.LXN.19941218T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,972 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NIL.P1.LXZ.19941218T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,973 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NIL.P3.MXE.19941218T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,973 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NIL.P3.MXN.19941218T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:18,973 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NIL.P3.MXZ.19941218T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,100 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.NNA.  .LOG.1988-06-22T00:00:00.000GMT
+2014-05-07 18:13:19,111 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NNA.00.LHE.20020722T18:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,111 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NNA.00.LHN.20020722T18:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,112 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NNA.00.LHZ.20020722T18:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,112 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NNA.00.VHE.20020722T18:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,113 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NNA.00.VHN.20020722T18:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,113 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NNA.00.VHZ.20020722T18:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,114 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NNA.00.ENE.19960307T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,114 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NNA.00.ENN.19960307T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,115 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NNA.00.ENZ.19960307T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,115 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NNA.00.LNE.19960307T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,115 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NNA.00.LNN.19960307T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,116 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NNA.00.LNZ.19960307T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,116 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NNA.00.SHE.19960307T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,117 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NNA.00.SHN.19960307T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,117 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NNA.00.SHZ.19960307T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,118 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NNA.00.SLE.19960307T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,118 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NNA.00.SLN.19960307T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,119 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NNA.00.SLZ.19960307T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,119 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NNA.00.VME.19931126T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,119 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NNA.00.VMN.19931126T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,120 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NNA.00.VMZ.19931126T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,120 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NNA.  .LOG.19880622T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,326 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.NRIL.  .LOG.1992-12-15T00:00:00.000GMT
+2014-05-07 18:13:19,333 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NRIL.00.EHE.19990731T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,333 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NRIL.00.EHN.19990731T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,334 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NRIL.00.EHZ.19990731T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,334 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NRIL.00.ELE.19990731T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,334 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NRIL.00.ELN.19990731T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,335 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NRIL.00.ELZ.19990731T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,335 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NRIL.  .LOG.19921215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,352 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NRIL.00.LHE.19921215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,353 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NRIL.00.LHN.19921215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,353 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NRIL.00.LHZ.19921215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,354 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NRIL.00.LLE.19921215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,354 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NRIL.00.LLN.19921215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,354 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NRIL.00.LLZ.19921215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,355 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NRIL.00.VHE.19921215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,355 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NRIL.00.VHN.19921215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,355 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NRIL.00.VHZ.19921215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,356 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NRIL.00.VME.19921215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,356 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NRIL.00.VMN.19921215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,356 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.NRIL.00.VMZ.19921215T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,632 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.OBN.  .LOG.1988-09-14T00:00:00.000GMT
+2014-05-07 18:13:19,640 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.OBN.00.ENE.19980618T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,640 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.OBN.00.ENN.19980618T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,641 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.OBN.00.ENZ.19980618T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,641 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.OBN.00.LHE.19980618T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,642 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.OBN.00.LHN.19980618T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,642 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.OBN.00.LHZ.19980618T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,643 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.OBN.00.LNE.19980618T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,643 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.OBN.00.LNN.19980618T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,643 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.OBN.00.LNZ.19980618T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,644 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.OBN.00.VHE.19980618T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,644 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.OBN.00.VHN.19980618T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,645 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.OBN.00.VHZ.19980618T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,645 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.OBN.00.VME.19980618T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,645 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.OBN.00.VMN.19980618T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,646 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.OBN.00.VMZ.19980618T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,646 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.OBN.00.WDO.19980618T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,675 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.OBN.XX.LHE.19980618T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,676 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.OBN.XX.LHN.19980618T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,677 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.OBN.XX.LHZ.19980618T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,677 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.OBN.XX.VHE.19980618T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,678 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.OBN.XX.VHN.19980618T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,679 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.OBN.XX.VHZ.19980618T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,680 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.OBN.  .LOG.19880914T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,811 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.PALK.  .LOG.2000-08-22T00:00:00.000GMT
+2014-05-07 18:13:19,824 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PALK.00.LH1.20020622T09:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,824 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PALK.00.LH2.20020622T09:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,825 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PALK.00.LHZ.20020622T09:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,825 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PALK.00.VH1.20020622T09:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,825 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PALK.00.VH2.20020622T09:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,826 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PALK.00.VHZ.20020622T09:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,826 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PALK.  .LOG.20000822T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,827 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PALK.00.ENE.20000822T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,827 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PALK.00.ENN.20000822T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,828 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PALK.00.ENZ.20000822T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,828 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PALK.00.LNE.20000822T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,829 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PALK.00.LNN.20000822T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,829 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PALK.00.LNZ.20000822T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,829 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PALK.00.VME.20000822T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,830 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PALK.00.VMN.20000822T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,830 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PALK.00.VMZ.20000822T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,831 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PALK.00.WDO.20000822T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,969 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.PFO.  .LOG.1986-10-24T00:00:00.000GMT
+2014-05-07 18:13:19,978 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.00.ENE.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,978 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.00.ENN.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,979 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.00.ENZ.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,979 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.00.LHE.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,979 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.00.LHN.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,980 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.00.LHZ.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,980 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.00.LNE.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,980 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.00.LNN.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,980 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.00.LNZ.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,981 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.00.VHE.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,981 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.00.VHN.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,981 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.00.VHZ.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,982 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.00.VME.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,982 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.00.VMN.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,982 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.00.VMZ.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,983 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.00.WDI.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,989 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.10.LHE.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,990 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.10.LHN.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,990 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.10.LHZ.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,990 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.10.VHE.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,991 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.10.VHN.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,991 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.10.VHZ.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,991 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.10.VMU.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,992 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.10.VMV.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,992 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.10.VMW.20020107T22:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:19,993 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.PFO.  .LOG.19861024T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,181 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.RAYN.  .LOG.1996-01-01T00:00:00.000GMT
+2014-05-07 18:13:20,190 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RAYN.00.ENE.19970202T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,190 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RAYN.00.ENN.19970202T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,190 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RAYN.00.ENZ.19970202T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,191 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RAYN.00.LHE.19970202T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,191 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RAYN.00.LHN.19970202T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,191 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RAYN.00.LHZ.19970202T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,192 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RAYN.00.LNE.19970202T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,192 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RAYN.00.LNN.19970202T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,192 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RAYN.00.LNZ.19970202T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,192 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RAYN.00.VHE.19970202T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,193 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RAYN.00.VHN.19970202T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,193 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RAYN.00.VHZ.19970202T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,193 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RAYN.00.VME.19970202T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,194 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RAYN.00.VMN.19970202T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,194 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RAYN.00.VMZ.19970202T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,220 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RAYN.XX.LHE.19970202T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,221 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RAYN.XX.LHN.19970202T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,222 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RAYN.XX.LHZ.19970202T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,223 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RAYN.XX.VHE.19970202T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,223 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RAYN.XX.VHN.19970202T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,224 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RAYN.XX.VHZ.19970202T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,225 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RAYN.  .LOG.19960101T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,337 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.RPN.  .LOG.1987-06-15T00:00:00.000GMT
+2014-05-07 18:13:20,345 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.00.ENE.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,345 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.00.ENN.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,345 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.00.ENZ.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,346 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.00.LHE.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,346 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.00.LHN.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,346 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.00.LHZ.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,346 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.00.LNE.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,347 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.00.LNN.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,347 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.00.LNZ.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,347 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.00.VHE.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,348 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.00.VHN.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,348 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.00.VHZ.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,348 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.00.VME.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,349 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.00.VMN.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,349 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.00.VMZ.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,349 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.00.WDI.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,356 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.10.LHE.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,356 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.10.LHN.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,357 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.10.LHZ.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,358 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.10.VHE.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,358 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.10.VHN.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,359 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.10.VHZ.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,359 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.10.VMU.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,359 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.10.VMV.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,360 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.10.VMW.20020917T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,360 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.RPN.  .LOG.19870615T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,482 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.SACV.  .LOG.2000-05-29T00:00:00.000GMT
+2014-05-07 18:13:20,497 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SACV.00.LHE.20020903T10:38:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,497 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SACV.00.LHN.20020903T10:38:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,498 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SACV.00.LHZ.20020903T10:38:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,498 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SACV.00.VHE.20020903T10:38:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,498 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SACV.00.VHN.20020903T10:38:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,499 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SACV.00.VHZ.20020903T10:38:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,499 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SACV.  .LOG.20000529T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,500 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SACV.00.ENE.20000529T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,500 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SACV.00.ENN.20000529T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,500 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SACV.00.ENZ.20000529T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,501 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SACV.00.LNE.20000529T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,501 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SACV.00.LNN.20000529T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,502 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SACV.00.LNZ.20000529T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,502 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SACV.00.VME.20000529T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,503 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SACV.00.VMN.20000529T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,503 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SACV.00.VMZ.20000529T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,504 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SACV.00.WDO.20000529T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,643 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.SHEL.  .LOG.1995-06-19T00:00:00.000GMT
+2014-05-07 18:13:20,654 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SHEL.00.LH1.20021005T16:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,655 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SHEL.00.LH2.20021005T16:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,655 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SHEL.00.LHZ.20021005T16:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,655 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SHEL.00.VH1.20021005T16:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,655 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SHEL.00.VH2.20021005T16:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,656 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SHEL.00.VHZ.20021005T16:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,656 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SHEL.  .LOG.19950619T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,656 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SHEL.00.ENE.19950619T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,657 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SHEL.00.ENN.19950619T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,657 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SHEL.00.ENZ.19950619T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,657 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SHEL.00.LNE.19950619T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,658 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SHEL.00.LNN.19950619T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,658 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SHEL.00.LNZ.19950619T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,658 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SHEL.00.VME.19950619T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,658 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SHEL.00.VMN.19950619T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,659 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SHEL.00.VMZ.19950619T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,851 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.SUR.  .LOG.1990-10-30T00:00:00.000GMT
+2014-05-07 18:13:20,860 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SUR.00.LHE.20020715T06:58:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,860 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SUR.00.LHN.20020715T06:58:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,861 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SUR.00.LHZ.20020715T06:58:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,861 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SUR.00.VHE.20020715T06:58:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,861 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SUR.00.VHN.20020715T06:58:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,862 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SUR.00.VHZ.20020715T06:58:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,873 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SUR.  .LOG.19901030T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,874 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SUR.00.VME.19901030T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,874 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SUR.00.VMN.19901030T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,874 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.SUR.00.VMZ.19901030T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,980 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.TAU.  .LOG.1994-01-17T00:00:00.000GMT
+2014-05-07 18:13:20,988 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TAU.00.LHE.20020722T04:49:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,988 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TAU.00.LHN.20020722T04:49:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,989 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TAU.00.LHZ.20020722T04:49:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,989 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TAU.00.VHE.20020722T04:49:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,989 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TAU.00.VHN.20020722T04:49:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,990 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TAU.00.VHZ.20020722T04:49:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,990 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TAU.  .LOG.19940117T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,990 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TAU.00.VME.19940117T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,990 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TAU.00.VMN.19940117T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:20,991 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TAU.00.VMZ.19940117T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,168 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.TLY.  .LOG.1990-10-12T00:00:00.000GMT
+2014-05-07 18:13:21,180 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TLY.00.LHE.20021203T14:22:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,180 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TLY.00.LHN.20021203T14:22:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,181 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TLY.00.LHZ.20021203T14:22:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,181 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TLY.00.VHE.20021203T14:22:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,182 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TLY.00.VHN.20021203T14:22:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,182 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TLY.00.VHZ.20021203T14:22:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,182 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TLY.00.EHE.20000112T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,183 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TLY.00.EHN.20000112T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,183 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TLY.00.EHZ.20000112T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,184 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TLY.00.ELE.20000112T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,184 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TLY.00.ELN.20000112T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,185 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TLY.00.ELZ.20000112T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,185 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TLY.00.ENE.20000112T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,186 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TLY.00.ENN.20000112T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,186 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TLY.00.ENZ.20000112T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,186 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TLY.00.LNE.20000112T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,187 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TLY.00.LNN.20000112T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,187 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TLY.00.LNZ.20000112T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,187 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TLY.00.WDO.19981026T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,188 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TLY.  .LOG.19901012T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,188 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TLY.00.VME.19901012T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,188 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TLY.00.VMN.19901012T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,188 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.TLY.00.VMZ.19901012T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,349 INFO Refresh NetworkArm stationxml.StationXMLToFissures - No sensitivity for II.1986-01-01T00:00:00.000GMT.WRAB.  .LOG.1994-03-27T00:00:00.000GMT
+2014-05-07 18:13:21,356 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.WRAB.00.LHE.20020912T05:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,356 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.WRAB.00.LHN.20020912T05:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,356 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.WRAB.00.LHZ.20020912T05:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,357 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.WRAB.00.VHE.20020912T05:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,357 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.WRAB.00.VHN.20020912T05:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,357 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.WRAB.00.VHZ.20020912T05:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,357 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.WRAB.00.VME.19970310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,358 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.WRAB.00.VMN.19970310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,358 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.WRAB.00.VMZ.19970310T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,368 INFO Refresh NetworkArm Fail.NetworkArm - Rejected II.19860101T00:00:00.000Z.WRAB.  .LOG.19940327T00:00:00.000Z: BandCode:FAIL:
+2014-05-07 18:13:21,369 INFO Refresh NetworkArm hibernate.AbstractHibernateDB - Commit session before creation, nothing to do
+2014-05-07 18:13:22,382 INFO Refresh NetworkArm sod.NetworkArm - Network arm finished.
+2014-05-07 18:13:22,383 INFO OutputScheduler status.OutputScheduler - Lo!  I am weary of my wisdom, like the bee that hath gathered too much
+honey; I need hands outstretched to take it.
+2014-05-07 18:26:55,967 INFO main sod.Start - logging configured
+2014-05-07 18:26:55,974 INFO main sod.Start - SOD version 3.2.3
+2014-05-07 18:26:55,974 INFO main sod.Start - Args:  -f recipe.xml
+2014-05-07 18:26:55,974 INFO main sod.Start - Recipe: recipe.xml
+2014-05-07 18:26:55,974 INFO main sod.Start - validating recipe...
+2014-05-07 18:26:56,487 INFO main sod.Start - Congratulations, valid recipe.
+2014-05-07 18:26:56,489 INFO main sod.Start - Database: jdbc:hsqldb:file:SodDb/SodDb
+2014-05-07 18:26:56,518 INFO main hibernate.AbstractHibernateDB - zombie session checker started
+2014-05-07 18:26:57,398 INFO main sod.LocalSeismogramArm - EventStation: edu.sc.seis.sod.subsetter.eventStation.DistanceRange
+2014-05-07 18:26:57,399 INFO main sod.LocalSeismogramArm - EventChannel: edu.sc.seis.sod.subsetter.eventChannel.PassEventChannel
+2014-05-07 18:26:57,399 INFO main sod.LocalSeismogramArm - RequestGenerator: edu.sc.seis.sod.subsetter.requestGenerator.PhaseRequest
+2014-05-07 18:26:57,399 INFO main sod.LocalSeismogramArm - RequestSubsetter: edu.sc.seis.sod.subsetter.request.PassRequest
+2014-05-07 18:26:57,399 INFO main sod.LocalSeismogramArm - SeismogramSourceLocator: edu.sc.seis.sod.source.seismogram.FdsnDataSelect
+2014-05-07 18:26:57,399 INFO main sod.LocalSeismogramArm - AvailableDataSubsetter: edu.sc.seis.sod.subsetter.availableData.SomeCoverage
+2014-05-07 18:26:57,399 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.SomeDataCoverage
+2014-05-07 18:26:57,399 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.PrintlineSeismogramProcess
+2014-05-07 18:26:57,399 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.SacWriter
+2014-05-07 18:26:57,399 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.ResponseGain
+2014-05-07 18:26:57,399 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.RMean
+2014-05-07 18:26:57,399 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.RTrend
+2014-05-07 18:26:57,399 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.Integrate
+2014-05-07 18:26:57,399 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.SacWriter
+2014-05-07 18:26:57,399 INFO main sod.LocalSeismogramArm - WaveformProcess: edu.sc.seis.sod.process.waveform.LegacyExecute
+2014-05-07 18:26:57,399 INFO main sod.Start - Start start()
+2014-05-07 18:26:57,535 INFO main hibernate.HibernateUtil - using hsql dialect
+2014-05-07 18:26:57,536 INFO main hibernate.HibernateUtil - setup: org.hibernate.dialect.HSQLDialect org.hsqldb.jdbcDriver  jdbc:hsqldb:file:SodDb/SodDb  sa  
+2014-05-07 18:26:58,547 INFO main hibernate.AbstractHibernateDB - Commit session before creation, nothing to do
+2014-05-07 18:26:58,547 INFO main sod.CommonAccess - CommonAccess.initialize
+2014-05-07 18:26:58,563 INFO main jacorb.config - configuration jacorb loaded from file /Users/lkloh/sod-3.2.3/etc/jacorb.properties
+2014-05-07 18:26:58,566 INFO main orb.print_version - 
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JacORB V 2.3.1_USC2, www.jacorb.org
+	(C) The JacORB project 27-May-2009
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2014-05-07 18:26:58,569 INFO main fissuresUtil.Dissendium - Loading darkMagic passwords from system properties
+2014-05-07 18:26:58,569 INFO main fissuresUtil.Dissendium - Loading IRIS passwords from system properties
+2014-05-07 18:26:58,570 INFO main fissuresUtil.Dissendium - Dissendium NOT registered with orb as no passwords specified.
+2014-05-07 18:26:58,580 INFO main jacorb.orb - Property "jacorb.hashtable_class" is set to: java.util.HashMap
+2014-05-07 18:26:58,580 INFO main sod.CommonAccess - ORB class is org.jacorb.orb.ORB
+2014-05-07 18:27:00,357 INFO main sod.Start - All hope abandon: Your config file has changed since your last run.  It may not be advisable to continue this SOD run.
+2014-05-07 18:27:11,425 INFO EventArm sod.EventArm - edu.sc.seis.sod.source.event.FdsnEvent@29ecc3e covers events from 2003-01-01T00:00:00.000GMT to 2003-01-10T23:59:59.999GMT
+2014-05-07 18:27:11,428 INFO WaveformArm 0 sod.WaveformArm - Starting WaveformArm
+2014-05-07 18:27:11,488 INFO main sod.Start - Finished starting all threads.
+2014-05-07 18:27:11,503 INFO retry loader hibernate.SodDB - retry query: from edu.sc.seis.sod.EventChannelPair  where (status.standingInt = 3 or status.standingInt = 4 )  and seconds_between(:now, lastQuery) > :minDelay  and numRetries < 5 and (seconds_between(:now, lastQuery) > :maxDelay or seconds_between(:now, lastQuery) > power(:base, numRetries))  order by numRetries
+2014-05-07 18:27:11,506 INFO EventArm sod.EventArm - Finished processing the event arm.
+2014-05-07 18:27:11,506 INFO EventArm sod.EventArm - Event arm finished
+2014-05-07 18:27:11,530 INFO WaveformArm 0 hibernate.SodDB - populate ECP/EVP ToDo: 0

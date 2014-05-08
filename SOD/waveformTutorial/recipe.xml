@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<sod>
+	<!-- EVENT ARM -->
+	<eventArm>
+		<fdsnEvent>
+			<originTimeRange>
+				<startTime>
+					<year>2003</year>
+					<month>1</month>
+					<day>1</day>
+				</startTime>
+				<endTime>
+					<year>2003</year>
+					<month>1</month>
+					<day>10</day>
+				</endTime>
+			</originTimeRange>
+			<magnitudeRange>
+				<min>5</min>
+			</magnitudeRange>
+			<catalog>NEIC PDE</catalog>
+		</fdsnEvent>
+		<printlineEventProcess/>
+	</eventArm>
+	<!-- EVENT ARM -->
+	<!-- NETWORK ARM -->
+	<networkArm>
+		<fdsnStation/> 
+		<networkCode>II</networkCode>
+		<bandCode>B</bandCode>
+		<printlineChannelProcess/>
+	</networkArm>
+	<!-- NETWORK ARM -->
+	<!-- WAVEFORM ARM -->
+	<waveformArm>
+		<!-- Process only channels that are 30 to 90 degrees away from an earthquake. -->
+		<distanceRange>
+			<unit>DEGREE</unit>
+			<min>30</min>
+			<max>90</max>
+		</distanceRange>
+		<phaseRequest>
+			<model>prem</model>
+			<beginPhase>ttp</beginPhase>
+			<!-- request made for data 120 seconds before P wave arrival -->
+			<beginOffset>
+				<unit>SECOND</unit>
+				<value>-120</value>
+			</beginOffset>
+			<endPhase>tts</endPhase>
+			<endOffset>
+				<unit>SECOND</unit>
+				<value>360</value>
+			</endOffset>
+			<!-- request made for data 3 min after S wave arrival -->
+		</phaseRequest>
+		<fdsnDataSelect/>
+
+		<!-- only make a request if data is available -->
+		<someCoverage/>
+		<someDataCoverage/>
+
+		<!-- prints info about each seismogram it retrieves -->
+		<printlineSeismogramProcess/>
+
+		<!-- save the raw seismogram as SAC files -->
+		<sacWriter/>
+
+		<!-- Apply a gain correction to the seismogram -->
+		<responseGain/>
+
+		<!-- remove the mean from the seismogram -->
+		<rMean/>
+
+		<!-- remove the trend from the seismogram -->
+		<rTrend/>
+
+		<!-- integrate seismogram: changes velocity to displacement -->
+		<integrate/>
+
+		<!-- save processed results as another set of SAC files -->
+		<sacWriter>
+			<workingDir>processedSeismograms</workingDir>
+		</sacWriter>
+
+		<!-- execute echo command with file names from the save -->
+		<legacyExecute>
+			<command>echo Sod saved this file</command>
+		</legacyExecute>
+
+	</waveformArm>
+	<!-- WAVEFORM ARM -->
+</sod>
+
+
+
+
