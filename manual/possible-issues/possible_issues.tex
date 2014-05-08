@@ -55,33 +55,36 @@ To ensure you can open a script, you need to add
 to the \verb".bashrc" file. We recommend adding the paths to the \verb".bashrc" file, for reasons listed here: \url{http://stackoverflow.com/questions/415403/whats-the-difference-between-bashrc-bash-profile-and-environment}.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 % ************************************************************* %
 %                                                               %
 %                     SETTING THE PYTHON PATH                   %
 %                                                               %
 % ************************************************************* %
+
+% ************************************************************* %
+%                                                               %
+%                   TERMINAL COMMANDS STOP WORKING              %
+%                                                               %
+% ************************************************************* %
+
+\section{Terminal Commands stop working}
+
+If ever the terminal commands such as \verb"ls" stop working in the terminal, it could be that something went wrong with a path in the \verb".bashrc" or \verb".profile" files. If that happens you may not be able to open them in vim as that command would have stopped working as well. Instead, in the terminal, you do
+
+\begin{verbatim}
+  PATH=/bin:${PATH}
+  PATH=/usr/bin:${PATH}
+\end{verbatim}
+
+And that should allow the commands to start working again. Figure out what you did wrong and remove that command. 
+
+% ************************************************************* %
+%                                                               %
+%                   TERMINAL COMMANDS STOP WORKING              %
+%                                                               %
+% ************************************************************* %
+
+
 
 
 
