@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<!-- 
+Download seismic data from all broadband stations in the conterminous US.
+For earthquakes in last month of 2011 with Mw magnitude >= 6
+
+-->
+<sod>
+    <eventArm>
+        <fdsnEvent>
+            <originTimeRange>
+                <startTime>
+                    2011-12-01T00:00:00.000Z
+                </startTime>
+                <endTime>
+                    2012-01-01T00:00:00.000Z
+                </endTime>
+            </originTimeRange>
+            <magnitudeRange>
+			    <magType>MW</magType>
+                <min>6.0</min>
+                <max>9.9</max>
+            </magnitudeRange>
+			<pointDistance>
+			    <latitude>39.833</latitude>
+			    <longitude>-98.583</longitude>
+			    <unit>DEGREE</unit>
+			    <min>30</min>
+			    <max>110</max>
+			</pointDistance>
+        </fdsnEvent>
+        <removeEventDuplicate/>
+        <printlineEventProcess>
+			<template>$event.catalog,$event.contributor,$event.getTime('yyyy/MM/dd HH:mm:ss.SSS'),$event.getLatitude(' ##0.000;-##0.000'),$event.getLongitude(' ##0.000;-##0.000'),$event.getDepth('###0.0'),$event.magnitudeType,$event.magnitudeValue,$event.region </template>
+			<filename>evlist</filename>
+        </printlineEventProcess>
+    </eventArm>
+    <networkArm>
+		<fdsnStation>
+        	<stationBoxArea>
+            	<latitudeRange>
+            	    <min>24</min>
+            	    <max>77</max>
+            	</latitudeRange>
+            	<longitudeRange>
+                	<min>-139</min>
+                	<max>-52</max>
+            	</longitudeRange>
+        	</stationBoxArea>
+    		<channelCode>BH*</channelCode>
+    		<channelCode>EH*</channelCode>
+    		<channelCode>HH*</channelCode>
+		</fdsnStation>
+        <networkOR>
+            <networkCode>IU</networkCode>
+            <networkCode>US</networkCode>
+            <networkCode>TA</networkCode>
+			<networkCode>CN</networkCode>
+			<networkCode>PO</networkCode>
+			<networkCode>CI</networkCode>
+        </networkOR>
+		<isGroupable/>
+    </networkArm>
+<!-- Waveform arm
+    Teleseismic: 30-90 degrees + 20 degrees to include edges of region
+	Time window:  -180s Pwave, 360s Swave
+	Data span the entire time window
+	No gaps, best channel 	
+-->
+    <waveformVectorArm>
+        <phaseRequest>
+            <model>iasp91</model>
+            <beginPhase>ttp</beginPhase>
+            <beginOffset>
+                <unit>SECOND</unit>
+                <value>-300</value>
+            </beginOffset>
+            <endPhase>ttp</endPhase>
+            <endOffset>
+                <unit>SECOND</unit>
+                <value>3000</value>
+            </endOffset>
+        </phaseRequest>
+        <fdsnDataSelect/>
+<!--
+        <distanceRange>
+            <unit>DEGREE</unit>
+            <min>30</min>
+            <max>90</max>
+        </distanceRange>
+-->
+        <fullCoverage/>
+		<noGaps/>
+		<threeComponentData/>
+		<bestChannelAtStation/>
+        <printlineSeismogramProcess/>
+        <sacWriter>
+            <workingDir>seismograms</workingDir>
+		    <location>Event_$event.getTime('yyyy.MM.dd.HH.mm.ss.SSS')/${network.code}.${station.code}.${site.code}.${channel.code}.sac</location>
+			<littleEndian/> 
+        </sacWriter>
+		<!-- processing
+		     remove instrument response
+			 save sac files 
+		-->
+        <rMean/>
+        <rTrend/>
+<!-- replaced instrument removal to displacement (not stable) by a simple division by the instrument's scalar gain
+		<transferResponse>
+		    <lowCut>0.006</lowCut>
+		    <lowPass>0.01</lowPass>
+		    <highPass>6</highPass>
+		    <highCut>10</highCut>
+		</transferResponse>
+-->
+        <responseGain/>
+		<!-- more processing
+		     filter: bp co 0.02 2 P 2
+			 rotate
+			 save another set of sac files 
+		<sacWriter/>
+		-->
+<!-- comment out these filters:
+        <oregonDSPFilter>
+                <bandpass/>
+                <lowFreqCorner>
+                <value>50</value>
+                <unit>SECOND</unit>
+                </lowFreqCorner>
+                <highFreqCorner>
+                <value>2</value>
+                <unit>HERTZ</unit>
+                </highFreqCorner>
+        		<filterType>TWOPASS</filterType>
+        </oregonDSPFilter>
+-->
+		<sampleSyncronize/>
+		<vectorTrim/>
+		<rotateGCP/>
+        <sacWriter>
+            <workingDir>processedSeismograms</workingDir>
+		    <location>Event_$event.getTime('yyyy.MM.dd.HH.mm.ss.SSS')/${network.code}.${station.code}.${site.code}.${channel.code}.sac</location>
+			<littleEndian/> 
+        </sacWriter>
+    </waveformVectorArm>
+</sod>
+
