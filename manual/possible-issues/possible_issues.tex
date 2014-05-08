@@ -84,10 +84,61 @@ And that should allow the commands to start working again. Figure out what you d
 %                                                               %
 % ************************************************************* %
 
+% ************************************************************* %
+%                                                               %
+%                  UNINSTALLING ENTHOUGHT CANOPY                %
+%                                                               %
+% ************************************************************* %
+
+\section{Uninstalling Enthought Canopy}
+
+The official Enthought gives suggestions on uninstalling here: \url{https://support.enthought.com/entries/23580651-Uninstalling-Canopy}
+
+STEP 1: From the Canopy preferences menu, unset Canopy as your default Python.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/canopy_preferences}
+  \caption{Canopy preferences}
+  \label{fig:canopy_preferences}
+\end{figure}
+
+STEP 2: for each Canopy user, delete the following directory which contains that user's ``System'' and ``User'' virtual environment subdirections.
+
+STEP 3: Delete Canopy from the Applications folder. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/applications_canopy}
+  \caption{applications canopy}
+  \label{fig:applications_canopy}
+\end{figure}
+
+STEP 4: Clean up the hidden files. Delete anything referencing Canopy or Enthought in the hidden files, as evidence by referencing \verb"ls -a" in your home directory. Check the \verb".bashrc" and \verb".profile" directories first. If Enthought is not completely gone, this happens if you call Python:
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/residue}
+  \caption{Residue}
+  \label{fig:residue}
+\end{figure}
 
 
 
 
+
+
+
+
+
+
+
+
+% ************************************************************* %
+%                                                               %
+%                  UNINSTALLING ENTHOUGHT CANOPY                %
+%                                                               %
+% ************************************************************* %
 
 % ------------------------------------------------------------------------- %
 
