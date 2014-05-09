@@ -1,17 +1,14 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.4.11)  8 MAY 2014 11:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.8)  9 MAY 2014 14:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **installing.tex
 (./installing.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ba
-sque, danish, dutch, ukenglish, usenglishmax, finnish, french, german, ngerman,
- swissgerman, hungarian, italian, bokmal, nynorsk, polish, portuguese, spanish,
- swedish, loaded.
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/base/article.cls
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/base/size10.clo
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -29,30 +26,28 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \@input{preamble.aux}
 \openout2 = `preamble.aux'.
 
-(./preamble.tex
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/xcolor/xcolor.sty
+(./preamble.tex (/usr/local/texlive/2013/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
-
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/latexconfig/color.cfg
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/local/texlive/2012basic/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2012basic/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count87
 )
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/colortbl/colortbl.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/tools/array.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen103
 \extrarowheight=\dimen104
@@ -74,7 +69,7 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
 \TX@col@width=\dimen105
 \TX@old@table=\dimen106
@@ -84,56 +79,56 @@ Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
 \TX@cols=\count89
 \TX@ftn=\toks16
 )
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2009/06/22 v3.00
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks17
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/tools/enumerate.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks18
 )
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2000/07/18 v2.13 AMS math features
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip46
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks19
 \ex@=\dimen110
 ))
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen111
 )
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count90
-LaTeX Info: Redefining \frac on input line 211.
+LaTeX Info: Redefining \frac on input line 210.
 \uproot@=\count91
 \leftroot@=\count92
-LaTeX Info: Redefining \overline on input line 307.
+LaTeX Info: Redefining \overline on input line 306.
 \classnum@=\count93
 \DOTSCASE@=\count94
-LaTeX Info: Redefining \ldots on input line 379.
-LaTeX Info: Redefining \dots on input line 382.
-LaTeX Info: Redefining \cdots on input line 467.
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen112
-LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count95
 \c@MaxMatrixCols=\count96
 \dotsspace@=\muskip10
@@ -154,34 +149,34 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \multlinegap=\skip47
 \multlinetaggap=\skip48
 \mathdisplay@stack=\toks23
-LaTeX Info: Redefining \[ on input line 2666.
-LaTeX Info: Redefining \] on input line 2667.
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
 )
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/amsmath/amscd.sty
-Package: amscd 1999/11/29 v1.2d
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amscd.sty
+Package: amscd 1999/11/29 v2.0
 \athelp@=\toks24
 \minaw@=\dimen119
 \bigaw@=\dimen120
 \minCDarrowwidth=\dimen121
 )
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/url/url.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
-Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ))
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks25
 )
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
@@ -205,7 +200,7 @@ LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 
-(/usr/local/texlive/2012basic/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count102
 \scratchdimen=\dimen124
@@ -218,15 +213,15 @@ LaTeX Font Info:    ... okay on input line 11.
 \MPnumerator=\count106
 \makeMPintoPDFobject=\count107
 \everyMPtoPDFconversion=\toks27
-) (/usr/local/texlive/2012basic/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/local/texlive/2012basic/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-(/usr/local/texlive/2012basic/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
@@ -235,21 +230,22 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
-(/usr/local/texlive/2012basic/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-)) (/usr/local/texlive/2012basic/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-(/usr/local/texlive/2012basic/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
-(/usr/local/texlive/2012basic/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -261,18 +257,19 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Try loading font information for U+msa on input line 12.
- (/usr/local/texlive/2012basic/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 12.
 
-(/usr/local/texlive/2012basic/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <images/system_preferences.png, id=1, 801.99625pt x 743.77875pt>
 File: images/system_preferences.png Graphic file (type png)
@@ -291,114 +288,115 @@ Package pdftex.def Info: images/startup_disk.png used on input line 33.
 
 
 
-{/usr/local/texlive/2012basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./
-images/system_preferences.png> <./images/startup_disk.png>] <images/python_cons
-ole.png, id=13, 642.4pt x 465.74pt>
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
+s/system_preferences.png> <./images/startup_disk.png>] <images/enthought_consol
+e.png, id=13, 682.55pt x 470.75874pt>
+File: images/enthought_console.png Graphic file (type png)
+
+<use images/enthought_console.png>
+Package pdftex.def Info: images/enthought_console.png used on input line 60.
+(pdftex.def)             Requested size: 172.5pt x 118.968pt.
+
+<images/python_console.png, id=14, 642.4pt x 465.74pt>
 File: images/python_console.png Graphic file (type png)
 
 <use images/python_console.png>
-Package pdftex.def Info: images/python_console.png used on input line 61.
+Package pdftex.def Info: images/python_console.png used on input line 74.
 (pdftex.def)             Requested size: 172.5pt x 125.06213pt.
 
-<images/python_version.png, id=14, 711.65875pt x 727.71875pt>
+<images/python_version.png, id=15, 711.65875pt x 727.71875pt>
 File: images/python_version.png Graphic file (type png)
 
 <use images/python_version.png>
-Package pdftex.def Info: images/python_version.png used on input line 70.
+Package pdftex.def Info: images/python_version.png used on input line 83.
 (pdftex.def)             Requested size: 172.5pt x 176.38829pt.
- [2 <./images/python_console.png> <./images/python_version.png>]
-Overfull \hbox (0.11014pt too wide) in paragraph at lines 127--130
-\OT1/cmr/m/n/10 pysmo.aimbat are avail-able for down-load at $\OT1/cmtt/m/n/10 
-http : / / www . earth . northwestern .
- []
-
-<images/site_package_location.png, id=18, 671.50874pt x 474.77374pt>
-File: images/site_package_location.png Graphic file (type png)
-
-<use images/site_package_location.png>
-Package pdftex.def Info: images/site_package_location.png used on input line 14
-2.
-(pdftex.def)             Requested size: 172.5pt x 121.96039pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[3]
-Overfull \hbox (6.5546pt too wide) in paragraph at lines 164--165
+[2 <./images/enthought_console.png> <./images/python_console.png>]
+Overfull \hbox (0.11014pt too wide) in paragraph at lines 140--143
+\OT1/cmr/m/n/10 pysmo.aimbat are avail-able for down-load at $\OT1/cmtt/m/n/10 
+http : / / www . earth . northwestern .
+ []
+
+[3 <./images/python_version.png>]
+<images/site_package_location.png, id=22, 671.50874pt x 474.77374pt>
+File: images/site_package_location.png Graphic file (type png)
+
+<use images/site_package_location.png>
+Package pdftex.def Info: images/site_package_location.png used on input line 15
+5.
+(pdftex.def)             Requested size: 172.5pt x 121.96039pt.
+
+Overfull \hbox (6.5546pt too wide) in paragraph at lines 177--178
 []\OT1/cmr/m/n/10 to in-stall it and its pack-age in-for-ma-tion file []\OT1/cm
 tt/m/n/10 <pysmo.sac-0.5-py2.7.egg-info
  []
 
 
-Overfull \hbox (2.22084pt too wide) in paragraph at lines 164--165
+Overfull \hbox (2.22084pt too wide) in paragraph at lines 177--178
 \OT1/cmr/m/n/10 to the global site-packages di-rec-tory []\OT1/cmtt/m/n/10 <pre
 fix>/lib/python2.7/site-packages\OT1/cmr/m/n/10 ,
  []
 
-<images/sac_installed.png, id=22, 713.66624pt x 382.42876pt>
+[4 <./images/site_package_location.png>]
+<images/sac_installed.png, id=26, 713.66624pt x 382.42876pt>
 File: images/sac_installed.png Graphic file (type png)
 
 <use images/sac_installed.png>
-Package pdftex.def Info: images/sac_installed.png used on input line 178.
+Package pdftex.def Info: images/sac_installed.png used on input line 191.
 (pdftex.def)             Requested size: 172.5pt x 92.4325pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (55.41492pt too wide) in paragraph at lines 187--188
+Overfull \hbox (55.41492pt too wide) in paragraph at lines 200--201
 \OT1/cmr/m/n/10 Three sub-directories are in-cluded in the []\OT1/cmtt/m/n/10 <
 pkg-install-dir>/pysmo/pysmo-aimbat-0.1.2>
  []
 
 
-Overfull \hbox (0.10971pt too wide) in paragraph at lines 187--188
+Overfull \hbox (0.10971pt too wide) in paragraph at lines 200--201
 \OT1/cmr/m/n/10 di-rec-tory: []\OT1/cmtt/m/n/10 example\OT1/cmr/m/n/10 , []\OT1
 /cmtt/m/n/10 scripts\OT1/cmr/m/n/10 , and []\OT1/cmtt/m/n/10 src\OT1/cmr/m/n/10
  , which con-tain ex-am-ple SAC files, Python
  []
 
-[4 <./images/site_package_location.png>]
-Overfull \hbox (2.24783pt too wide) in paragraph at lines 202--203
+
+Overfull \hbox (2.24783pt too wide) in paragraph at lines 215--216
 []\OT1/cmr/m/n/10 Add []\OT1/cmtt/m/n/10 <pkg-install-dir>/pysmo/pysmo-aimbat.0
 .1.2/scripts \OT1/cmr/m/n/10 to en-vi-ron-
  []
 
 
-Overfull \hbox (130.60814pt too wide) in paragraph at lines 204--205
+Overfull \hbox (130.60814pt too wide) in paragraph at lines 217--218
 []\OT1/cmr/m/n/10 For Bash shell users: do []\OT1/cmtt/m/n/10 export PATH=$PATH
 :<pkg-install-dir>/pysmo/pysmo-aimbat-0.1.2/scripts
  []
 
 
-Overfull \hbox (114.80144pt too wide) in paragraph at lines 206--207
+Overfull \hbox (114.80144pt too wide) in paragraph at lines 219--220
 []\OT1/cmr/m/n/10 For C shell users, do []\OT1/cmtt/m/n/10 setenv PATH=$PATH:<p
 kg-install-dir>/pysmo/pysmo-aimbat-0.1.2/scripts
  []
 
-[5 <./images/sac_installed.png>] (./installing.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[5 <./images/sac_installed.png>] [6] (./installing.aux) ) 
 Here is how much of TeX's memory you used:
- 3148 strings out of 494578
- 41465 string characters out of 3168574
- 104504 words of memory out of 3000000
- 6309 multiletter control sequences out of 15000+200000
- 11363 words of font info for 45 fonts, out of 3000000 for 9000
- 314 hyphenation exceptions out of 8191
- 45i,7n,37p,323b,236s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
-2.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr10.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr12.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr17.pfb></usr/local/texlive/2012basic/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmtt10.pfb>
-Output written on installing.pdf (5 pages, 677769 bytes).
+ 3159 strings out of 493308
+ 41309 string characters out of 6137817
+ 108375 words of memory out of 5000000
+ 6554 multiletter control sequences out of 15000+600000
+ 11363 words of font info for 45 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 45i,7n,37p,417b,236s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/20
+13/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/201
+3/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2013/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2013/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2013/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on installing.pdf (6 pages, 747916 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
+ 50 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

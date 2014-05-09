@@ -124,11 +124,106 @@ STEP 4: Clean up the hidden files. Delete anything referencing Canopy or Enthoug
 \end{figure}
 
 
+% ************************************************************* %
+%                                                               %
+%                  UNINSTALLING ENTHOUGHT CANOPY                %
+%                                                               %
+% ************************************************************* %
+
+% ************************************************************* %
+%                                                               %
+%                  PATH TO FILES NOT FOUND                      %
+%                                                               %
+% ************************************************************* %
+
+\section{Path to python files not found}
 
 
+After adding the path to your directory with scripts in \verb".bashrc", you still need to source the \verb".bashrc" files in \verb".profile", or the system may not find the directory. 
+
+This explanation from \url{http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.aix.baseadmn/doc/baseadmndita/prof_file.htm} explains how the profile file is sourced. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/profile_file}
+  \caption{Profile file}
+  \label{fig:profile_file}
+\end{figure}
+
+This explanation from \url{http://linux.die.net/man/1/bash} explains how the bashrc file is sourced. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/bashrc_file}
+  \caption{Bashrc file}
+  \label{fig:bashrc_file}
+\end{figure}
+
+This is what the bashrc and profile files should look like on your home directory:
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/bashrc_home}
+  \caption{Bashrc home}
+  \label{fig:bashrc_home}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/profile_home}
+  \caption{Profile home}
+  \label{fig:profile_home}
+\end{figure}
 
 
+% ************************************************************* %
+%                                                               %
+%                  PATH TO FILES NOT FOUND                      %
+%                                                               %
+% ************************************************************* %
 
+% ************************************************************* %
+%                                                               %
+%               PICKING TRAVEL TIMES DOES NOT WORK              %
+%                                                               %
+% ************************************************************* %
+
+\section{Picking Travel Times does not work}
+
+If you run \verb"ttick.py <Event name>.bhz.pkl", a GUI will pop up for you to manually pick the travel times by pressing the keyboard. If typing on the keyboard as directed does not allow you to pick travel times, it could be a problem with the keyboard settings, or the matplotlib backend. 
+
+To fix this, first look for the \verb".matplotlib" directory. It is hidden so in your home directory do \verb"ls -a" to find it.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/matplotlib_hidden_directory}
+  \caption{Matplotlib hidden directory}
+  \label{fig:matplotlib_hidden_directory}
+\end{figure}
+
+Once you have found the \verb".matplotlib" directory, cd into it, and then look for the \verb"matplotlibrc" file. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/files_in_matplotlib}
+  \caption{.matplotlib files within}
+  \label{fig:files_in_matplotlib}
+\end{figure}
+
+Inside that file, ensure the backend is set to:
+
+\begin{verbatim}
+  backend : TkAgg
+\end{verbatim}
+
+Comment out the other backends! 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/matplotlibrc_file}
+  \caption{Matplotlibrc backend}
+  \label{fig:matplotlibrc_file}
+\end{figure}
 
 
 
@@ -136,7 +231,7 @@ STEP 4: Clean up the hidden files. Delete anything referencing Canopy or Enthoug
 
 % ************************************************************* %
 %                                                               %
-%                  UNINSTALLING ENTHOUGHT CANOPY                %
+%               PICKING TRAVEL TIMES DOES NOT WORK              %
 %                                                               %
 % ************************************************************* %
 
