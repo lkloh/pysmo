@@ -1,0 +1,65 @@
+# Scripts and procedure for data processing from SOD.
+# xlou 11/14/2011
+
+
+*** run pushproj.sh to push scripts/iccs/sacplot at ~/project/geo/
+
+
+* sodkml.sh
+	prepare xml files
+
+* sodrun.sh
+	start SOD to download data
+
+* sodkill.sh
+	kill SOD jobs
+
+* tar and gzip downloaded data
+
+drwxr-xr-x   3 xlou  staff          102 Nov  3 12:08 ta2010q1mw50
+drwxr-xr-x   6 xlou  staff          204 Nov 13 22:14 ta2010q1mw60
+-rw-r--r--   1 xlou  staff  14465327165 Nov 13 22:32 ta2010q1mw60.tar.gz
+drwxr-xr-x   3 xlou  staff          102 Nov  3 12:08 ta2010q2mw50
+drwxr-xr-x  12 xlou  staff          408 Nov 14 05:31 ta2010q2mw55
+drwxr-xr-x   6 xlou  staff          204 Nov 13 22:16 ta2010q2mw60
+-rw-r--r--   1 xlou  staff   6259238801 Nov 13 22:39 ta2010q2mw60.tar.gz
+drwxr-xr-x   3 xlou  staff          102 Nov  3 12:08 ta2010q3mw50
+drwxr-xr-x   6 xlou  staff          204 Nov 13 22:16 ta2010q3mw60
+-rw-r--r--   1 xlou  staff   6170783240 Nov 13 22:45 ta2010q3mw60.tar.gz
+drwxr-xr-x   3 xlou  staff          102 Nov  3 12:08 ta2010q4mw50
+drwxr-xr-x  12 xlou  staff          408 Nov 14 05:07 ta2010q4mw55
+drwxr-xr-x   6 xlou  staff          204 Nov 13 22:16 ta2010q4mw60
+-rw-r--r--   1 xlou  staff   3279496174 Nov 13 22:48 ta2010q4mw60.tar.gz
+
+* sodcut.sh
+	set 1-d arrival times to sac header variables
+	cut seismograms to shorter
+	rename processedSeismograms/ to sac/ and remove seismograms/
+
+* sodpkl.sh (calling sac2pkl.py)
+	read SAC files into python pickles 
+	tar and gzip sac.tar.gz
+
+* for d in `ls -d *mw60`; do echo $d; rm -rf $d/sac; mv $d $d"pkl"; done
+	remove sac files
+	rename dir 
+
+drwxr-xr-x   3 xlou  staff       102 Nov  3 12:08 ta2010q1mw50
+drwxr-xr-x  60 xlou  staff      2040 Nov 15 11:36 ta2010q1mw60pkl
+drwxr-xr-x   3 xlou  staff       102 Nov  3 12:08 ta2010q2mw50
+drwxr-xr-x  14 xlou  staff       476 Nov 15 11:18 ta2010q2mw55
+drwxr-xr-x  34 xlou  staff      1156 Nov 15 11:36 ta2010q2mw60pkl
+drwxr-xr-x   3 xlou  staff       102 Nov  3 12:08 ta2010q3mw50
+drwxr-xr-x  28 xlou  staff       952 Nov 15 11:36 ta2010q3mw60pkl
+drwxr-xr-x   3 xlou  staff       102 Nov  3 12:08 ta2010q4mw50
+drwxr-xr-x  13 xlou  staff       442 Nov 15 09:23 ta2010q4mw55
+drwxr-xr-x  24 xlou  staff       816 Nov 15 11:36 ta2010q4mw60pkl
+
+* getsta.py
+	get loc.sta file from pickles
+
+* autoiccs.sh
+	Run automatic ICCS with pickle files
+
+
+
