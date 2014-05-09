@@ -1,0 +1,30 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{\textit{Goldstein et~al.}(2003)\textit{Goldstein, Dodge, Firpo, and
+  Minner}}]{sac}
+Goldstein, P., D.~Dodge, M.~Firpo, and L.~Minner (2003), {SAC2000: Signal
+  processing and analysis tools for seismologists and engineers},
+  \textit{International Geophysics}, \textit{81}, 1613--1614.
+
+\bibitem[{\textit{Hunter}(2007)}]{matplotlib}
+Hunter, J. (2007), {Matplotlib: A 2D Graphics Environment}, \textit{Computing
+  in Science \& Engineering}, \textit{3}(9), 90--95.
+
+\bibitem[{\textit{Lou et~al.}(2012)\textit{Lou, van~der Lee, and
+  Lloyd}}]{pytool}
+Lou, X., S.~van~der Lee, and S.~Lloyd (2012), {A Python/Matplotlib Tool for
+  Measuring Teleseismic Body Wave Arrival Times}, \textit{Seismological
+  Research Letters, in revision}.
+
+\bibitem[{\textit{VanDecar and Crosson}(1990)}]{mccc}
+VanDecar, J.~C., and R.~S. Crosson (1990), {Determination of teleseismic
+  relative phase arrival times using multi-channel cross-correlation and least
+  squares}, \textit{Bulletin of the Seismological Society of America},
+  \textit{80}(1), 150--169.
+
+\end{thebibliography}

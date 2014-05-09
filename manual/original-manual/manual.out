@@ -1,0 +1,21 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Installation}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Install Dependencies}{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Mac}{subsection.2.1}% 4
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Linux}{subsection.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.2}{Install pysmo.sac and pysmo.aimbat}{section.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Install pysmo.sac}{subsection.2.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Install pysmo.aimbat}{subsection.2.2}% 8
+\BOOKMARK [1][-]{section.3}{Tutorial}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{Parameter Configuration}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.2}{SAC Data Access}{section.3}% 11
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Python Object for SAC Files}{subsection.3.2}% 12
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Python Pickle for SAC Files}{subsection.3.2}% 13
+\BOOKMARK [2][-]{subsection.3.3}{SAC Plotting and Phase Picking}{section.3}% 14
+\BOOKMARK [3][-]{subsubsection.3.3.1}{SAC Plotting}{subsection.3.3}% 15
+\BOOKMARK [3][-]{subsubsection.3.3.2}{SAC Phase Picking}{subsection.3.3}% 16
+\BOOKMARK [2][-]{subsection.3.4}{Measuring Teleseismic Body Wave Arrival Times}{section.3}% 17
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Automated Phase Alignment}{subsection.3.4}% 18
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Interactive Quality Control and Graphical User Interface}{subsection.3.4}% 19
+\BOOKMARK [1][-]{section.4}{Appendix}{}% 20
+\BOOKMARK [1][-]{appendix.A}{List of Files and Directories in the Packages}{}% 21
