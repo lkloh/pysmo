@@ -50,3 +50,7 @@ Installation
 	python setup.py build --fcompiler=gfortran
 	python setup.py install
 * Add the directory pysmo-aimbat-0.1.1/scripts to environment variable $PATH
+* 
+NOTES
+-----
+Obspy
