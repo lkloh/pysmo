@@ -39,6 +39,22 @@ Do not uninstall MacPorts unless you know what you are doing, uninstalling MacPo
 
 % ************************************************************* %
 %                                                               %
+%                      PIP INSTALLATION                         %
+%                                                               %
+% ************************************************************* %
+
+\section{Installing Python with Pip}
+
+Be careful with the operating system. For OS X 10.9 and above, Python 2.7 is not fully compatible and there may be problems installing python with Pip. Best to use Enthought Canopy or Python 3 with OS X 10.9. 
+
+% ************************************************************* %
+%                                                               %
+%                      PIP INSTALLATION                         %
+%                                                               %
+% ************************************************************* %
+
+% ************************************************************* %
+%                                                               %
 %                     SETTING THE PYTHON PATH                   %
 %                                                               %
 % ************************************************************* %
@@ -123,6 +139,8 @@ STEP 4: Clean up the hidden files. Delete anything referencing Canopy or Enthoug
   \label{fig:residue}
 \end{figure}
 
+STEP 5: (Optional). Keep doing \texttt{which python} and cleaning the python files that show up, until \texttt{which python} gives you nothing when you type it in the terminal. 
+
 
 % ************************************************************* %
 %                                                               %
@@ -141,7 +159,7 @@ STEP 4: Clean up the hidden files. Delete anything referencing Canopy or Enthoug
 
 After adding the path to your directory with scripts in \verb".bashrc", you still need to source the \verb".bashrc" files in \verb".profile", or the system may not find the directory. 
 
-This explanation from \url{http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.aix.baseadmn/doc/baseadmndita/prof_file.htm} explains how the profile file is sourced. 
+This explanation from \url{http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.aix.baseadmn/doc/baseadmndita/prof_file.htm} explains how the profile file is sourced. Note that this one will override the file in \texttt{/etc/profile}.
 
 \begin{figure}[h!]
   \centering

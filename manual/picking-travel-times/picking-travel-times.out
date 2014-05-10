@@ -1,3 +1,11 @@
 \BOOKMARK [1][-]{section.1}{Picking travel times}{}% 1
-\BOOKMARK [1][-]{section.2}{Getting the stations of the seismograms kept}{}% 2
-\BOOKMARK [1][-]{section.3}{Getting the stations of the seismograms kept}{}% 3
+\BOOKMARK [2][-]{subsection.1.1}{Getting into the right directory}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Running ttpick.py}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Get rid of really bad seismograms}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{ICCC-B}{section.1}% 5
+\BOOKMARK [2][-]{subsection.1.5}{Manually pick the arrival times using t2}{section.1}% 6
+\BOOKMARK [2][-]{subsection.1.6}{MCCC}{section.1}% 7
+\BOOKMARK [2][-]{subsection.1.7}{SACP2 to check for outlier seismograms}{section.1}% 8
+\BOOKMARK [2][-]{subsection.1.8}{Go through the badly aligned seismograms and realign the travel times manually}{section.1}% 9
+\BOOKMARK [1][-]{section.2}{What the alignments stand for}{}% 10
+\BOOKMARK [1][-]{section.3}{Getting the stations of the seismograms kept}{}% 11
