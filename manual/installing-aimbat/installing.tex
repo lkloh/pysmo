@@ -66,6 +66,30 @@ Someone suggested Enthought Canopy to install all the Python packages easily. Se
 
 \subsection{Installing with Pip}
 
+Using Enthought Python is recommended, and it is assumed that readers of this section have a version of python on their computer they already want to keep.
+
+For those who do not want to use Enthought Python, get Python straight from the official website here: \url{https://www.python.org/download}.  Make sure to get version 2.7 and above. If you install a 2.7 and that is a higher version that one you already have, version 2.7 should be used by default when you fire up python. 
+
+Install pip on the Mac. To do so, in terminal type \texttt{python get-pip.py} to download the package manager pip.
+
+Install the rest of the packages.
+\begin{verbatim}
+  sudo pip install numpy
+  sudo pip install ipython
+  sudo pip install matplotlib
+\end{verbatim}
+
+Scipy is more tricky to install, as it depends on having gfortran. Try downloading the package directly, instead of using a package manager: \url{http://sourceforge.net/projects/scipy/files/scipy/0.9.0/}.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/getting_pip}
+  \caption{Getting pip}
+  \label{fig:getting_pip}
+\end{figure}
+
+The package manager brew caused many problems when tried. If you figured it out properly, email the authors about exactly how you did it, and we will gratefully add it to the manual. 
+
 % ------------------------------------------------------------- %
 
 \subsection{Installing with Macport}
@@ -91,7 +115,7 @@ To get python, go to \url{https://www.python.org/}, and get the correct version 
 
 % ------------------------------------------------------------- %
 
-\subsection{Macports}
+\subsubsection{Macports}
 
 Its best to use Macports \url{http://guide.macports.org/} to install the necessary python libraries for AIMBAT. 
 
@@ -122,18 +146,6 @@ Installing the last two packages is optional. \verb"ipython" is an enhanced inte
 
 You need this version, not other versions on your computer, since this is the one that has the libraries AIMBAT needs.
 
-\subsection{Installing without a package}
-
-First download python.
-
-Install pip to install 
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=0.5\textwidth]{images/getting_pip}
-  \caption{Getting pip}
-  \label{fig:getting_pip}
-\end{figure}
 
 % ************************************************************* %
 %                                                               %
