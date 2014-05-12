@@ -88,9 +88,7 @@ Scipy is more tricky to install, as it depends on having gfortran. Try downloadi
   \label{fig:getting_pip}
 \end{figure}
 
-The package manager brew caused many problems when tried. If you figured it out properly, email the authors about exactly how you did it, and we will gratefully add it to the manual. 
-
-% ------------------------------------------------------------- %
+% ------------------------------------------------------- %
 
 \subsection{Installing with Macport}
 
@@ -145,6 +143,14 @@ Installing the last two packages is optional. \verb"ipython" is an enhanced inte
 \end{verbatim}
 
 You need this version, not other versions on your computer, since this is the one that has the libraries AIMBAT needs.
+
+% ------------------------------------------------------------- %
+
+\section{Regarding package managers}
+
+The package manager brew caused many problems when tried. If you figured it out properly, email the authors about exactly how you did it, and we will gratefully add it to the manual. In general, the authors do not recommend trying to install the packages separately when there are Python versions that will come with all the packages pre-installed already. 
+
+Scipy is especially tricky as it relies on Fortran and C as well. The authors of scipy recommend these convenient ways to install it: \url{http://www.scipy.org/install.html}, by using Enthought Canopy, or Anacoda. 
 
 
 % ************************************************************* %
