@@ -68,6 +68,8 @@ For an earthquake, it is expected that the arrival times should be identical in 
 
 We manually pick the the arrival times to align them. Click on the GUI window, hover over the correct spot where you want to pick the new travel time, and type \texttt{t2}. A red line should appear exactly where your mouse was. 
 
+Also pick the arrival time on the array stack. 
+
 % ----------------------------------------------- %
 
 \subsection{MCCC}
@@ -86,10 +88,9 @@ Click on the outliers that stray from the main group of stacked seismograms. The
 
 \subsection{Go through the badly aligned seismograms and realign the travel times manually}
 
-By default, the worst seismograms are on the first page, and as you click through the pages, the quality of the seismograms gradually gets better. Keep using \texttt{t2} to realign the arrival times so that the peaks of all the seismograms are nicely aligned. Remember to zoom in to have a better look. 
+By default, the worst seismograms are on the first page, and as you click through the pages, the quality of the seismograms gradually gets better. Keep using \texttt{t2} to realign the arrival times so that the peaks of all the seismograms are nicely aligned. Remember to zoom in to have a better look.
 
 However, you may which to sort the seismograms in alphabetical order so that you can find the bad seismogrrams and correct them more easily. Run 
-
 
 \begin{verbatim}
 	ttpick.py -s -i ___.bhz.pkl
@@ -101,7 +102,7 @@ The seismograms are stretched to fit together, but they may be scaled differentl
 
 % ----------------------------------------------- %
 
-\section{What the alignments stand for}
+\subsection{What the alignments stand for}
 
 TO: Theoretical Arrival
 
@@ -109,9 +110,9 @@ T1: Pick from initial cross correlation
 
 T2: Travel Time pick
 
-T3: MCCC pick.
+T3: MCCC pick
 
-T4: Zoom in.
+T4: Zoom in
 
 % ************************************************************* %
 %                                                               %
@@ -119,7 +120,20 @@ T4: Zoom in.
 %                                                               %
 % ************************************************************* %
 
-\section{Getting the stations of the seismograms kept}
+\section{Post Processing}
+
+\subsection{Getting the output}
+
+In the same folder as the initial PKL file you ran \texttt{ttpick.py} on, you can find the output list with extension \texttt{<event name>.mcp}, which contains the travel time arrivals. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/output_list}
+  \caption{Output list}
+  \label{fig:output_list}
+\end{figure}
+
+\subsection{Getting the stations of the seismograms chosen}
 
 Run \verb"getsta.py" in the additional scripts (not on Github for now). It gives the unique list of stations where the seismograms came from. You need to run it with the list of all \verb"pkl" files chosen after you saved to. You so this \verb"./getsta.py *.pkl". 
 
@@ -129,7 +143,6 @@ Run \verb"getsta.py" in the additional scripts (not on Github for now). It gives
   \caption{count stations}
   \label{fig:count_stations}
 \end{figure}
-
 
 \end{document}
 

@@ -7,5 +7,7 @@
 \BOOKMARK [2][-]{subsection.1.6}{MCCC}{section.1}% 7
 \BOOKMARK [2][-]{subsection.1.7}{SACP2 to check for outlier seismograms}{section.1}% 8
 \BOOKMARK [2][-]{subsection.1.8}{Go through the badly aligned seismograms and realign the travel times manually}{section.1}% 9
-\BOOKMARK [1][-]{section.2}{What the alignments stand for}{}% 10
-\BOOKMARK [1][-]{section.3}{Getting the stations of the seismograms kept}{}% 11
+\BOOKMARK [2][-]{subsection.1.9}{What the alignments stand for}{section.1}% 10
+\BOOKMARK [1][-]{section.2}{Post Processing}{}% 11
+\BOOKMARK [2][-]{subsection.2.1}{Getting the output}{section.2}% 12
+\BOOKMARK [2][-]{subsection.2.2}{Getting the stations of the seismograms chosen}{section.2}% 13

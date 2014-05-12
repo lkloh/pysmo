@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.8)  9 MAY 2014 19:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.8)  12 MAY 2014 10:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -386,42 +386,66 @@ Package pdftex.def Info: images/pick_travel_times.png used on input line 40.
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
 s/pick_travel_times.png>] [2]
-<images/count_stations.png, id=66, 649.42625pt x 263.98625pt>
+<images/output_list.png, id=66, 801.99625pt x 522.95375pt>
+File: images/output_list.png Graphic file (type png)
+
+<use images/output_list.png>
+Package pdftex.def Info: images/output_list.png used on input line 131.
+(pdftex.def)             Requested size: 172.5pt x 112.48074pt.
+
+<images/count_stations.png, id=67, 649.42625pt x 263.98625pt>
 File: images/count_stations.png Graphic file (type png)
 
 <use images/count_stations.png>
-Package pdftex.def Info: images/count_stations.png used on input line 128.
+Package pdftex.def Info: images/count_stations.png used on input line 142.
 (pdftex.def)             Requested size: 172.5pt x 70.11714pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
- [3 <./images/count_stations.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
+[3 <./images/output_list.png>] [4 <./images/count_stations.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
 
 (./picking-travel-times.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 134.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 134.
-Package rerunfilecheck Info: File `picking-travel-times.out' has not changed.
-(rerunfilecheck)             Checksum: FFDCF0C43EC5E7D182FE8BF3136FECD2;840.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 134.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 147.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 147.
+
+
+Package rerunfilecheck Warning: File `picking-travel-times.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `picking-travel-times.out':
+(rerunfilecheck)             Before: FFDCF0C43EC5E7D182FE8BF3136FECD2;840
+(rerunfilecheck)             After:  3ACA3240A5568212D08A953A775982FF;989.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 147.
  ) 
 Here is how much of TeX's memory you used:
- 6608 strings out of 493308
- 93787 string characters out of 6137817
+ 6619 strings out of 493308
+ 93982 string characters out of 6137817
  184632 words of memory out of 5000000
- 9970 multiletter control sequences out of 15000+600000
+ 9975 multiletter control sequences out of 15000+600000
  11532 words of font info for 46 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  45i,7n,37p,510b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
-local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/l
-ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on picking-travel-times.pdf (3 pages, 1220497 bytes).
+pdfTeX warning (dest): name{section.3} has been referenced but does not exist
+, replaced by a fixed one
+
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/lo
+cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/loc
+al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on picking-travel-times.pdf (4 pages, 1399201 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
- 99 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
+ 22 named destinations out of 1000 (max. 500000)
+ 104 words of extra memory for PDF output out of 10000 (max. 10000000)
 
