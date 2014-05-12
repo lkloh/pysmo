@@ -46,9 +46,15 @@ Note that if you click on the buttons, they will not work until you move the mou
 
 % ----------------------------------------------- %
 
+\subsection{ICCC-A}
+
+\framebox[1.1\width]{ICCC-A} is only used in the beginning, if you have altered some of the travel time arrivals of the seismograms by pressing \texttt{t2}, and want to realign the array stack. 
+
+% ----------------------------------------------- %
+
 \subsection{Get rid of really bad seismograms}
 
-If there are any really bad seismograms, you can click on them to deselect them. 
+If there are any really bad seismograms, you can click on them to deselect them. Bad seismograms are those that look nothing like the shape of the array stack pictured. Usually, if there are more than enough seismograms, so it is safe to throw out any that deviate more than a bit from the array stack. If you don't filter your data, you'll have to throw out more seismograms. 
 
 Remember to save your work periodically once you start picking your travel times, otherwise if AIMBAT crashes, you lose it. 
 
@@ -60,21 +66,40 @@ Hit the \framebox[1.1\width]{ICCC-B} button to begin the initial cross-correlati
 
 We are not using \framebox[1.1\width]{ICCC-A} here, but these are the theoretical arrival times, marked in black. 
 
-% ----------------------------------------------- %
-
-\subsection{Manually pick the arrival times using \texttt{t2}}
-
-For an earthquake, it is expected that the arrival times should be identical in an idealize situation. However, since stations are located in 3D space, this is not necessarily the case. Fror earthquakes of magnitude 7.0 and above, usually yhe arrival times are very well aligned as the signal is high.
-
-We manually pick the the arrival times to align them. Click on the GUI window, hover over the correct spot where you want to pick the new travel time, and type \texttt{t2}. A red line should appear exactly where your mouse was. 
-
-Also pick the arrival time on the array stack. 
 
 % ----------------------------------------------- %
 
 \subsection{MCCC}
 
 Hit \framebox[1.1\width]{MCCC} to run the Multi-Channel cross-correlation. Do not high \framebox[1.1\width]{ICCC-A} or \framebox[1.1\width]{ICCC-B} again, or all your work will be erased. 
+
+% ----------------------------------------------- %
+
+\subsection{Manually pick the arrival times using \texttt{t2}}
+
+For an earthquake, it is expected that the arrival times should be identical in an idealize situation. However, since stations are located in 3D space, this is not necessarily the case. For earthquakes of magnitude 7.0 and above, usually the arrival times are very well aligned as the signal is high. However, if the earthquake is too strong, the source gets complicated, so it needs filtering. 
+
+Below a magnitude of 6.0, the signal to noise ratio gets very weak. If the weighted average quality gets too low (1.0 and below), it may not be worth keeping that data set unless you really need it. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/not_worth_it}
+  \caption{Weighted average quality is 0.85 - should throw away}
+  \label{fig:not_worth_it}
+\end{figure}
+
+We manually pick the the arrival times to align them. Click on the GUI window, hover over the correct spot where you want to pick the new travel time, and type \texttt{t2}. A red line should appear exactly where your mouse was. You can zoom in to help you with this picking. To zoom out, just hit \framebox[1.1\width]{MCCC} again.
+
+Also pick the arrival time on the array stack. 
+
+For the arrival times, you want to align the point where the first peak occurs most of all, then try to get the peaks to align. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/align_seismogram}
+  \caption{align seismogram}
+  \label{fig:align_seismogram}
+\end{figure}
 
 % ----------------------------------------------- %
 
