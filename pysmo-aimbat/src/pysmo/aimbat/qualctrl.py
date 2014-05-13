@@ -306,8 +306,9 @@ class PickPhaseMenuMore:
 		self.tfin = self.gsac.stkdh.gethdr(hdrfin)
 
 	def ccim(self, event):
-		
-		
+		# running ICCS-A or ICCS-B will erase everything you did. Make sure the user did not hit it by mistake
+	   	tkMessageBox.showwarning("This will erase everything you manually selected","Are you sure?")
+
 		""" Run iccs with time window from final stack. Time picks: hdrini, hdrmed.
 		"""
 		hdrini, hdrmed, hdrfin = self.opts.qcpara.ichdrs
