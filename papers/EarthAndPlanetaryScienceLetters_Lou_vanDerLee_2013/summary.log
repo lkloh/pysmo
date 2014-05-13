@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.8)  12 MAY 2014 11:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.8)  12 MAY 2014 18:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -282,27 +282,28 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 
 
 
-{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./summ
-ary.aux) ) 
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./
+summary.aux) ) 
 Here is how much of TeX's memory you used:
- 3128 strings out of 493308
- 40366 string characters out of 6137817
- 106363 words of memory out of 5000000
- 6530 multiletter control sequences out of 15000+600000
- 10888 words of font info for 43 fonts, out of 8000000 for 9000
+ 3130 strings out of 493308
+ 40387 string characters out of 6137817
+ 108363 words of memory out of 5000000
+ 6531 multiletter control sequences out of 15000+600000
+ 11196 words of font info for 44 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 45i,7n,37p,245b,198s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-bx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.
-pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pf
-b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
->
-Output written on summary.pdf (1 page, 64815 bytes).
+ 45i,7n,37p,245b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbx10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17
+.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb>
+Output written on summary.pdf (2 pages, 75385 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
- 22 compressed objects within 1 object stream
+ 39 PDF objects out of 1000 (max. 8388607)
+ 27 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
