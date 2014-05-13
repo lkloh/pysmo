@@ -38,6 +38,9 @@ from qualsort import initQual, seleSeis, sortSeisQual, sortSeisHeader, sortSeisH
 from algiccs import ccWeightStack, checkCoverage
 from algmccc import mccc, findPhase, eventListName, rcwrite
 
+import Tkinter
+import tkMessageBox
+
 def getOptions():
 	""" Parse arguments and options. """
 	parser = getParser()
@@ -303,6 +306,8 @@ class PickPhaseMenuMore:
 		self.tfin = self.gsac.stkdh.gethdr(hdrfin)
 
 	def ccim(self, event):
+		
+		
 		""" Run iccs with time window from final stack. Time picks: hdrini, hdrmed.
 		"""
 		hdrini, hdrmed, hdrfin = self.opts.qcpara.ichdrs
