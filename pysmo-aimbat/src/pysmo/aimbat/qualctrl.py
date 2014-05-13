@@ -306,8 +306,8 @@ class PickPhaseMenuMore:
 		self.tfin = self.gsac.stkdh.gethdr(hdrfin)
 
 	def ccim(self, event):
-		# running ICCS-A or ICCS-B will erase everything you did. Make sure the user did not hit it by mistake
-	   	tkMessageBox.showwarning("This will erase everything you manually selected","Are you sure?")
+		# running ICCS-A will erase everything you did. Make sure the user did not hit it by mistake
+	   	tkMessageBox.showwarning("Will Erase Work!","This will erase everything you manually selected. \nAre you sure?")
 
 		""" Run iccs with time window from final stack. Time picks: hdrini, hdrmed.
 		"""
@@ -325,6 +325,10 @@ class PickPhaseMenuMore:
 		if self.gsac.stkdh.gethdr(hdrfin) == -12345.:
 			print '*** hfinal %s is not defined. Sync first! ***' % hdrfin
 			return
+
+		# running ICCS-B will erase everything you did. Make sure the user did not hit it by mistake
+		tkMessageBox.showwarning("Will Erase Work!","This will erase everything you manually selected. \nAre you sure?")
+
 		self.cchdrs = hdrfin, hdrfin
 		self.getWindow(self.cchdrs[0])
 		self.getPicks()
