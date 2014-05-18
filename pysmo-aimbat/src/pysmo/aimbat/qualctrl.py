@@ -206,19 +206,20 @@ class PickPhaseMenuMore:
 		self.axccff = self.axs['CCFF']
 		self.axsync = self.axs['Sync']
 		self.axmccc = self.axs['MCCC']
-		#self.axsac1 = self.axs['SAC1']
+
 		self.axsac2 = self.axs['SAC2']
+
 		self.bnccim = Button(self.axccim, 'ICCS-A')
 		self.bnccff = Button(self.axccff, 'ICCS-B')
 		self.bnsync = Button(self.axsync, 'Sync')
 		self.bnmccc = Button(self.axmccc, 'MCCC')
-		#self.bnsac1 = Button(self.axsac1, 'SAC P1')
+
 		self.bnsac2 = Button(self.axsac2, 'SAC P2')
 		self.cidccim = self.bnccim.on_clicked(self.ccim)
 		self.cidccff = self.bnccff.on_clicked(self.ccff)
 		self.cidsync = self.bnsync.on_clicked(self.sync)
 		self.cidmccc = self.bnmccc.on_clicked(self.mccc)
-		#self.cidsac1 = self.bnsac1.on_clicked(self.plot1)
+
 		self.cidsac2 = self.bnsac2.on_clicked(self.plot2)
 		self.cidpress = self.axstk.figure.canvas.mpl_connect('key_press_event', self.on_zoom)
 
@@ -517,12 +518,14 @@ def getAxes(opts):
 	yccff = y2 - dy*2
 	ymccc = y2 - dy*3
 	y1 = ymccc - 1.5*dy
-	yprev = y1 - dy*0
-	ynext = y1 - dy*1
-	ysave = y1 - dy*2
-	yquit = y1 - dy*3
+	yfron = y1 - dy*0
+	yprev = y1 - dy*1
+	ynext = y1 - dy*2
+	ysave = y1 - dy*3
+	yquit = y1 - dy*4
 	ysac2 = yquit - dy*1.5
 
+	rectfron = [xm, yfron, xx, yy]
 	rectprev = [xm, yprev, xx, yy]
 	rectnext = [xm, ynext, xx, yy]
 	rectsave = [xm, ysave, xx, yy]
@@ -531,12 +534,12 @@ def getAxes(opts):
 	rectsync = [xm, ysync, xx, yy]
 	rectccff = [xm, yccff, xx, yy]
 	rectmccc = [xm, ymccc, xx, yy]
-	#rectsac1 = [xm, ysac1, xx, yy]
 	rectsac2 = [xm, ysac2, xx, yy]
 
 	axs = {}
 	axs['Seis'] = fig.add_axes(rectseis)
 	axs['Fstk'] = fig.add_axes(rectfstk, sharex=axs['Seis'])
+	axs['Fron'] = fig.add_axes(rectfron)
 	axs['Prev'] = fig.add_axes(rectprev)
 	axs['Next'] = fig.add_axes(rectnext)
 	axs['Save'] = fig.add_axes(rectsave)
@@ -545,7 +548,6 @@ def getAxes(opts):
 	axs['Sync'] = fig.add_axes(rectsync)
 	axs['CCFF'] = fig.add_axes(rectccff)
 	axs['MCCC'] = fig.add_axes(rectmccc)
-	#axs['SAC1'] = fig.add_axes(rectsac1)
 	axs['SAC2'] = fig.add_axes(rectsac2)
 
 	return axs
