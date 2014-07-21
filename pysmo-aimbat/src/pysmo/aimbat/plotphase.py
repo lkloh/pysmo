@@ -584,7 +584,7 @@ def getDataOpts():
 
 def main():
 	gsac, opts = getDataOpts()
-	axss = getAxes(opts)
+	# axss = getAxes(opts)
 	ssg = SingleSeisGather(gsac.saclist, opts, axss)
 
 

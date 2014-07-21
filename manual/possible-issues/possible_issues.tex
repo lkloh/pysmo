@@ -39,6 +39,22 @@ Do not uninstall MacPorts unless you know what you are doing, uninstalling MacPo
 
 % ************************************************************* %
 %                                                               %
+%                      PIP INSTALLATION                         %
+%                                                               %
+% ************************************************************* %
+
+\section{Installing Python with Pip}
+
+Be careful with the operating system. For OS X 10.9 and above, Python 2.7 is not fully compatible and there may be problems installing python with Pip. Best to use Enthought Canopy or Python 3 with OS X 10.9. 
+
+% ************************************************************* %
+%                                                               %
+%                      PIP INSTALLATION                         %
+%                                                               %
+% ************************************************************* %
+
+% ************************************************************* %
+%                                                               %
 %                     SETTING THE PYTHON PATH                   %
 %                                                               %
 % ************************************************************* %
@@ -86,6 +102,30 @@ And that should allow the commands to start working again. Figure out what you d
 
 % ************************************************************* %
 %                                                               %
+%                    INSTALLING ENTHOUGHT CANOPY                %
+%                                                               %
+% ************************************************************* %
+
+\section{Installing Enthought Canopy}
+
+Occasionally, Enthought Canopy may not open the default setup environment after you downloaded and tried to install it. If this happens, open the Canopy package, go to ``Preferences'', and select Canopy as your default environment. 
+
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/enthought_as_default}
+  \caption{Manually opening the default setup environment}
+  \label{fig:enthought_as_default}
+\end{figure}
+
+% ************************************************************* %
+%                                                               %
+%                    INSTALLING ENTHOUGHT CANOPY                %
+%                                                               %
+% ************************************************************* %
+
+% ************************************************************* %
+%                                                               %
 %                  UNINSTALLING ENTHOUGHT CANOPY                %
 %                                                               %
 % ************************************************************* %
@@ -123,20 +163,138 @@ STEP 4: Clean up the hidden files. Delete anything referencing Canopy or Enthoug
   \label{fig:residue}
 \end{figure}
 
-
-
-
-
-
-
-
-
-
+STEP 5: (Optional). Keep doing \texttt{which python} and cleaning the python files that show up, until \texttt{which python} gives you nothing when you type it in the terminal. 
 
 
 % ************************************************************* %
 %                                                               %
 %                  UNINSTALLING ENTHOUGHT CANOPY                %
+%                                                               %
+% ************************************************************* %
+
+% ************************************************************* %
+%                                                               %
+%                  PATH TO FILES NOT FOUND                      %
+%                                                               %
+% ************************************************************* %
+
+\section{Path to python files not found}
+
+
+After adding the path to your directory with scripts in \verb".bashrc", you still need to source the \verb".bashrc" files in \verb".profile", or the system may not find the directory. 
+
+This explanation from \url{http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.aix.baseadmn/doc/baseadmndita/prof_file.htm} explains how the profile file is sourced. Note that this one will override the file in \texttt{/etc/profile}.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/profile_file}
+  \caption{Profile file}
+  \label{fig:profile_file}
+\end{figure}
+
+This explanation from \url{http://linux.die.net/man/1/bash} explains how the bashrc file is sourced. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/bashrc_file}
+  \caption{Bashrc file}
+  \label{fig:bashrc_file}
+\end{figure}
+
+This is what the bashrc and profile files should look like on your home directory:
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/bashrc_home}
+  \caption{Bashrc home}
+  \label{fig:bashrc_home}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/profile_home}
+  \caption{Profile home}
+  \label{fig:profile_home}
+\end{figure}
+
+
+% ************************************************************* %
+%                                                               %
+%                  PATH TO FILES NOT FOUND                      %
+%                                                               %
+% ************************************************************* %
+
+% ************************************************************* %
+%                                                               %
+%               PICKING TRAVEL TIMES DOES NOT WORK              %
+%                                                               %
+% ************************************************************* %
+
+\section{Picking Travel Times does not work}
+
+If you run \verb"ttick.py <Event name>.bhz.pkl", a GUI will pop up for you to manually pick the travel times by pressing the keyboard. If typing on the keyboard as directed does not allow you to pick travel times, it could be a problem with the keyboard settings, or the matplotlib backend. 
+
+To fix this, first look for the \verb".matplotlib" directory. It is hidden so in your home directory do \verb"ls -a" to find it.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/matplotlib_hidden_directory}
+  \caption{Matplotlib hidden directory}
+  \label{fig:matplotlib_hidden_directory}
+\end{figure}
+
+Once you have found the \verb".matplotlib" directory, cd into it, and then look for the \verb"matplotlibrc" file. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/files_in_matplotlib}
+  \caption{.matplotlib files within}
+  \label{fig:files_in_matplotlib}
+\end{figure}
+
+Inside that file, ensure the backend is set to:
+
+\begin{verbatim}
+  backend : TkAgg
+\end{verbatim}
+
+Comment out the other backends! 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/matplotlibrc_file}
+  \caption{Matplotlibrc backend}
+  \label{fig:matplotlibrc_file}
+\end{figure}
+
+% ************************************************************* %
+%                                                               %
+%               PICKING TRAVEL TIMES DOES NOT WORK              %
+%                                                               %
+% ************************************************************* %
+
+% ************************************************************* %
+%                                                               %
+%                   PROBLEMS WITH FINDING TRAVEL TIMES          %
+%                                                               %
+% ************************************************************* %
+
+\section{Travel Times}
+
+If one of the seismograms being picked does not fit completely within the green (computer) window, nad you hit \framebox[1.1\width]{ICCC-A} or \framebox[1.1\width]{MCCC}, you will get an error message complaining about the exact seismogram which is too short. Deselect it. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/not_enough_sample}
+  \caption{Sample not within computated (green) region}
+  \label{fig:not_enough_sample}
+\end{figure}
+
+
+
+% ************************************************************* %
+%                                                               %
+%                   PROBLEMS WITH TRAVEL TIMES                  %
 %                                                               %
 % ************************************************************* %
 

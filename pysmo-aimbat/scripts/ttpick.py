@@ -65,7 +65,7 @@ def getAxes(opts):
 	axs['Save'] = fig.add_axes(rectsave)
 	axs['Quit'] = fig.add_axes(rectquit)
 	axs['CCIM'] = fig.add_axes(rectccim)
-	axs['Sync'] = fig.add_axes(rectsync)
+	# axs['Sync'] = fig.add_axes(rectsync)
 	axs['CCFF'] = fig.add_axes(rectccff)
 	axs['MCCC'] = fig.add_axes(rectmccc)
 	#axs['SAC1'] = fig.add_axes(rectsac1)
@@ -76,8 +76,9 @@ def getAxes(opts):
 
 def main():
 	gsac, opts = getDataOpts()
-	axs = getAxes(opts)
-	ppmm = PickPhaseMenuMore(gsac, opts, axs)
+	print 'THIS SUCKS'
+	# axs = getAxes(opts)
+	# ppmm = PickPhaseMenuMore(gsac, opts, axs)
 	fmt = 'png'
 	fmt = 'pdf'
 	if opts.savefig:
